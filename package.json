@@ -1,0 +1,23 @@
+{
+  "name": "uptown-donuts",
+  "version": "1.0.0",
+  "description": "A mock business website about donuts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalzero/Uptown-Donuts.git"
+  },
+  "author": "Calvin Pang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalzero/Uptown-Donuts/issues"
+  },
+  "homepage": "https://github.com/kalzero/Uptown-Donuts#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "webpack": "^4.26.0"
+  }
+}
