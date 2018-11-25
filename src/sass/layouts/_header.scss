@@ -1,0 +1,16 @@
+.header {
+    height: 100vh;    
+    background: $color-primary;
+    position: relative;
+
+    &__img-buildings {
+        background: url(/dist/img/uptown-buildings.png) repeat-x bottom;
+        position: absolute;
+        width: 100%;  
+        left: 0;
+        right: 0;
+        bottom: 0;   
+        height: 100px;
+        z-index: 5;
+    }
+}
