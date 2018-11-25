@@ -2,21 +2,24 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const extractPlugin = new ExtractTextPlugin({
     filename: "css/main.css",
     allChunks: true
 });
 const htmlWebPack = new HtmlWebpackPlugin({
-    filename: "index.html",
+    //filename: "index.html",
+    inject: false,
     template: "./src/index.html"
 });
+
 
 module.exports = {
     entry: "./src/js/app.js",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "js/bundle.js",
-        publicPath: "/dist"   
+        filename: "js/bundle.js"
+        //publicPath: "/dist"   
     },
     module: {
         rules: [
@@ -47,6 +50,7 @@ module.exports = {
     },
     plugins: [    
         extractPlugin,
-        htmlWebPack
+        htmlWebPack,
+        new CleanWebpackPlugin(["dist"])
     ]
 };

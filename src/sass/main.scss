@@ -1,7 +1,14 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "./base/base";
+
+@import "./components/popup";
+
+@import "./layouts/footer";
+@import "./layouts/grid";
+@import "./layouts/header";
+@import "./layouts/navigation";
+
+@import "./layouts/index";
+
