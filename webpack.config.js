@@ -1,8 +1,14 @@
 const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const extractPlugin = new ExtractTextPlugin({
-    filename: "css/main.css"
+    filename: "css/main.css",
+    allChunks: true
+});
+const htmlWebPack = new HtmlWebpackPlugin({
+    filename: "index.html",
+    template: "./src/index.html"
 });
 
 module.exports = {
@@ -28,16 +34,19 @@ module.exports = {
             {
                 test: /\.scss$/,
                 // order matters in the use property
-                loader: extractPlugin.extract({
-                    use: [                        
-                        "css-loader",
-                        "sass-loader"
-                    ]                                    
+                use: extractPlugin.extract({
+                    fallback: "style-loader",
+                    use: ["css-loader", "sass-loader"]
                 })
+            },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
             }
         ]
     },
     plugins: [    
-        extractPlugin
+        extractPlugin,
+        htmlWebPack
     ]
 };
