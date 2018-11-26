@@ -1,16 +1,44 @@
 .header {
     height: 100vh;    
-    background: $color-primary;
+    // background: $color-primary;
     position: relative;
 
+    &__img-sky {
+        background: linear-gradient(-180deg, #000d1a, #00284d, #0069cc, #1a90ff, #4da9ff, #80c1ff);
+        background-size: 600% 600%;
+        height: 100%;
+        width: 100%;
+        animation-name: daylight;
+        z-index: 1;
+    }
+
     &__img-buildings {
-        background: url(/dist/img/uptown-buildings.png) repeat-x bottom;
+        background: transparent url(/dist/img/uptown-buildings.png) repeat-x bottom;
         position: absolute;
         width: 100%;  
-        left: 0;
-        right: 0;
-        bottom: 0;   
-        height: 100px;
+        top: 0;
+        left: 0;  
+        height: 100%;
         z-index: 5;
+        //opacity: 0.2;
+        animation-name: brighten;
+    }
+
+    &__img-donut-sun {
+        background: url(/dist/img/uptown-donut.png) no-repeat center;                
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        height: 200px;
+        width: 200px;        
+        animation-name: riseUp;
+    }
+
+    &--animated {
+        animation-duration: 10s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
     }
 }

@@ -1,3 +1,33 @@
+@keyframes riseUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50rem); }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
+@keyframes brighten {
+  0% {
+    opacity: 0.05; }
+  100% {
+    opacity: 1; } }
+
+@keyframes daylight {
+  0% {
+    background-position: 0% 2%; }
+  20% {
+    background-position: 2% 25%; }
+  50% {
+    background-position: 25% 50%; }
+  70% {
+    background-position: 50% 70%; }
+  100% {
+    background-position: 70% 100%; } }
+
 *,
 *::after,
 *::before {
@@ -5,16 +35,42 @@
   padding: 0;
   box-sizing: inherit; }
 
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
 .header {
   height: 100vh;
-  background: #01062e;
   position: relative; }
+  .header__img-sky {
+    background: linear-gradient(-180deg, #000d1a, #00284d, #0069cc, #1a90ff, #4da9ff, #80c1ff);
+    background-size: 600% 600%;
+    height: 100%;
+    width: 100%;
+    animation-name: daylight;
+    z-index: 1; }
   .header__img-buildings {
-    background: url(/dist/img/uptown-buildings.png) repeat-x bottom;
+    background: transparent url(/dist/img/uptown-buildings.png) repeat-x bottom;
     position: absolute;
     width: 100%;
+    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100px;
-    z-index: 5; }
+    height: 100%;
+    z-index: 5;
+    animation-name: brighten; }
+  .header__img-donut-sun {
+    background: url(/dist/img/uptown-donut.png) no-repeat center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    height: 200px;
+    width: 200px;
+    animation-name: riseUp; }
+  .header--animated {
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; }
