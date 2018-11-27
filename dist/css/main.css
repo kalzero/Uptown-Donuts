@@ -1,10 +1,10 @@
 @keyframes riseUp {
   0% {
     opacity: 0;
-    transform: translate(-50%, 50rem); }
-  25% {
-    opacity: 0; }
-  50% {
+    transform: translate(-50%, 40rem); }
+  80% {
+    opacity: 0.5; }
+  90% {
     opacity: 0.8; }
   100% {
     opacity: 1;
@@ -12,17 +12,23 @@
 
 @keyframes brighten {
   0% {
-    opacity: 0.05; }
+    filter: brightness(15%); }
+  25% {
+    filter: brightness(25%); }
+  50% {
+    filter: brightness(45%); }
+  70% {
+    filter: brightness(70%); }
   100% {
-    opacity: 1; } }
+    filter: brightness(100%); } }
 
 @keyframes daylight {
   0% {
     background-position: 0% 2%; }
   20% {
-    background-position: 2% 25%; }
+    background-position: 2% 15%; }
   50% {
-    background-position: 25% 50%; }
+    background-position: 15% 50%; }
   70% {
     background-position: 50% 70%; }
   100% {
@@ -45,7 +51,7 @@ body {
   height: 100vh;
   position: relative; }
   .header__img-sky {
-    background: linear-gradient(-180deg, #000d1a, #00284d, #0069cc, #1a90ff, #4da9ff, #80c1ff);
+    background: linear-gradient(-180deg, #000d1a, #00284d, #004280, #005cb3, #0077e6, #1a90ff, #4da9ff, #80c1ff);
     background-size: 600% 600%;
     height: 100%;
     width: 100%;
