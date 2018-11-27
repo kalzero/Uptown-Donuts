@@ -1,3 +1,3 @@
-import "../sass/main.scss";
+import "../css/main.scss";
 import imgbuilding from "../img/uptown-buildings.png";
 import imgdonut from "../img/uptown-donut.png";

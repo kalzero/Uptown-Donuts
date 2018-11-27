@@ -13,7 +13,7 @@
     }
 
     &__img-buildings {
-        background: transparent url(/dist/img/uptown-buildings.png) repeat-x bottom;
+        background: transparent url(/img/uptown-buildings.png) repeat-x bottom;
         position: absolute;
         width: 100%;  
         top: 0;
@@ -25,7 +25,7 @@
     }
 
     &__img-donut-sun {
-        background: url(/dist/img/uptown-donut.png) no-repeat center;                
+        background: url(/img/uptown-donut.png) no-repeat center;                
         position: absolute;
         top: 20%;
         left: 50%;
@@ -37,7 +37,7 @@
     }
 
     &--animated {
-        animation-duration: 10s;
+        animation-duration: 5s;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
     }
