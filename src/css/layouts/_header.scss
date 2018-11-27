@@ -36,6 +36,20 @@
         animation-name: riseUp;
     }
 
+    &__img-scroll {
+        background: url(/img/uptown-donut-arrow-small.png) no-repeat center;
+        @include complete-center;
+        position: absolute;        
+        height: 64px;
+        width: 64px;
+        opacity: 0;
+        z-index: 4;    
+        animation-delay: 5s;  
+        animation-name: blinking;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;    
+    }
+
     &--animated {
         animation-duration: 5s;
         animation-timing-function: ease-out;
