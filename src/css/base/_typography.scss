@@ -1,0 +1,17 @@
+body {
+    line-height: 1.7;
+    color: $color-tertiary;
+}
+
+.header-secondary {
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3.5rem;
+    letter-spacing: .5rem;
+}
+
+.paragraph {
+    font-size: 2rem;
+}

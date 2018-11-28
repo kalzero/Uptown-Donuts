@@ -1,6 +1,5 @@
 .header {
-    height: 100vh;    
-    // background: $color-primary;
+    height: 100vh;        
     position: relative;
 
     &__img-sky {
@@ -19,8 +18,7 @@
         top: 0;
         left: 0;  
         height: 100%;
-        z-index: 5;
-        //opacity: 0.2;
+        z-index: 5;        
         animation-name: brighten;
     }
 
