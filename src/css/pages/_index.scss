@@ -19,3 +19,12 @@
         transform: scaleX(1.2) scaleY(1.2);
     }
 }
+
+.section-about {
+    background-color: $backcolor-3;
+    padding: 10rem 10rem;
+
+    &__header {
+        text-align: center;
+    }
+}

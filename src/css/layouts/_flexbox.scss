@@ -4,20 +4,17 @@
 }
 
 .flex-row {
-    display: flex;   
-    transition: all 1s; 
+    display: flex;       
 }
 
-.flex-col-1 {
-    flex: 1;
-    margin-right: 5rem;
+.flex-col-1-of-3 {
+    flex: 1;    
 }
 
-.flex-col-2 {
-    flex: 1;
-    margin-right: 5rem;
+.flex-col-1-of-2 {
+    flex: 2;
 }
 
-.flex-col-3 {
+.flex-col-2-of-2 {
     flex: 1;
 }
