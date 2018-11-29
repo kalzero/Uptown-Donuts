@@ -1,12 +1,21 @@
-.section-donuts {    
-    background-color: #f7f7f7;
-    padding: 20rem 10rem;
+.section-donuts {            
+    padding: 10rem 10rem;
 
     &__header {
         text-align: center;        
     }
 
+    &__photo {
+        overflow: hidden;        
+    }
+
     &__photo > img {          
-        width: 100%;        
+        width: 100%;    
+        transform: scale(1.05);
+        transition: all .4s;            
+    }
+
+    &__photo > img:hover {
+        transform: scaleX(1.2) scaleY(1.2);
     }
 }

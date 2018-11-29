@@ -1,5 +1,11 @@
+.flex-container {
+    background-color: $backcolor-2;       
+    margin-top: 10rem;  
+}
+
 .flex-row {
-    display: flex;
+    display: flex;   
+    transition: all 1s; 
 }
 
 .flex-col-1 {
