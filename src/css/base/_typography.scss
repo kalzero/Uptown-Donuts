@@ -11,10 +11,19 @@ body {
 }
 
 .header-secondary {    
-    background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 6rem;           
+    
+    // background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
+    // -webkit-background-clip: text;
+    // color: transparent;
+    font-size: 6rem;    
+    
+    &__dark {
+        color: $color-tertiary;
+    }
+
+    &__light {
+        color: $color-secondary;
+    }
 }
 
 .header-tertiary {

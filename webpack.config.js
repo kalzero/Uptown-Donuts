@@ -5,11 +5,6 @@ const CleanWebpackPlnpmugin = require("clean-webpack-plugin");
 const extractPlugin = new ExtractTextPlugin({
     filename: "css/main.css"   
 });
-const htmlWebPack = new HtmlWebpackPlugin({    
-    inject: false,
-    template: "./src/index.html"
-});
-
 
 module.exports = {
     entry: "./src/js/app.js",
@@ -21,7 +16,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,                
+                test: /\.js$/,
+                exclude: /node_modules/,                
                 use: [                                        
                     {
                         loader: "babel-loader",
@@ -60,7 +56,21 @@ module.exports = {
     },
     plugins: [    
         extractPlugin,
-        htmlWebPack
+        new HtmlWebpackPlugin({    
+            inject: false,
+            template: "./src/index.html",
+            filename: "index.html"
+        }),
+        new HtmlWebpackPlugin({    
+            inject: false,
+            template: "./src/pages/_menu.html",
+            filename: "./pages/_menu.html"
+        }),
+        new HtmlWebpackPlugin({    
+            inject: false,
+            template: "./src/pages/_intro.html",
+            filename: "./pages/_intro.html"
+        })
         //new CleanWebpackPlugin(["dist"])
     ]
 };

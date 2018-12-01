@@ -138,7 +138,19 @@ eval("module.exports = \"img/uptown-donut.png\";\n\n//# sourceURL=webpack:///./s
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../css/main.scss */ \"./src/css/main.scss\");\n\nvar _uptownBuildings = __webpack_require__(/*! ../img/uptown-buildings.png */ \"./src/img/uptown-buildings.png\");\n\nvar _uptownBuildings2 = _interopRequireDefault(_uptownBuildings);\n\nvar _uptownDonut = __webpack_require__(/*! ../img/uptown-donut.png */ \"./src/img/uptown-donut.png\");\n\nvar _uptownDonut2 = _interopRequireDefault(_uptownDonut);\n\nvar _uptownDonutArrowSmall = __webpack_require__(/*! ../img/uptown-donut-arrow-small.png */ \"./src/img/uptown-donut-arrow-small.png\");\n\nvar _uptownDonutArrowSmall2 = _interopRequireDefault(_uptownDonutArrowSmall);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\n__webpack_require__(/*! ../css/main.scss */ \"./src/css/main.scss\");\n\nvar _uptownBuildings = __webpack_require__(/*! ../img/uptown-buildings.png */ \"./src/img/uptown-buildings.png\");\n\nvar _uptownBuildings2 = _interopRequireDefault(_uptownBuildings);\n\nvar _uptownDonut = __webpack_require__(/*! ../img/uptown-donut.png */ \"./src/img/uptown-donut.png\");\n\nvar _uptownDonut2 = _interopRequireDefault(_uptownDonut);\n\nvar _uptownDonutArrowSmall = __webpack_require__(/*! ../img/uptown-donut-arrow-small.png */ \"./src/img/uptown-donut-arrow-small.png\");\n\nvar _uptownDonutArrowSmall2 = _interopRequireDefault(_uptownDonutArrowSmall);\n\nvar _htmlLoader = __webpack_require__(/*! ./helper/htmlLoader */ \"./src/js/helper/htmlLoader.js\");\n\nvar loader = _interopRequireWildcard(_htmlLoader);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// when page load for the first time go to intro\nwindow.onload = function () {\n    loader.getPage(\"intro\");\n};\n\nwindow.onhashchange = function () {\n    //window.history.go(-1);\n};\n\n// get html page based off the nav buttons\nvar menuItems = [\"nav-menu\"];\nmenuItems.forEach(function (cur) {\n    document.getElementById(cur).addEventListener(\"click\", function (e) {\n        loader.getPage(\"menu\");\n    });\n});\n\n//# sourceURL=webpack:///./src/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/js/helper/htmlLoader.js":
+/*!*************************************!*\
+  !*** ./src/js/helper/htmlLoader.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nvar getPage = exports.getPage = function getPage(pageName) {\n\n    var xhr = new XMLHttpRequest();\n    xhr.open('GET', \"dist/pages/_\" + pageName + \".html\", true);\n    xhr.send();\n\n    xhr.onreadystatechange = function () {\n        if (this.readyState !== 4) return;\n        if (this.status !== 200) return;\n        var response = this.responseText;\n        document.getElementById(\"app\").innerHTML = response;\n    };\n};\n\n//# sourceURL=webpack:///./src/js/helper/htmlLoader.js?");
 
 /***/ })
 

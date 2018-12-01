@@ -36,11 +36,22 @@
 
 @keyframes blinking {
   0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.5; }
+    opacity: 1;
+    transform: translate(-50%, 0); }
   100% {
-    opacity: 1; } }
+    opacity: 0;
+    transform: translate(-50%, 70%); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.animated-moveup {
+  animation: moveup 1s ease-out; }
 
 *,
 *::after,
@@ -54,6 +65,89 @@ html {
 
 body {
   box-sizing: border-box; }
+
+body {
+  line-height: 1.7;
+  font-family: sans-serif;
+  background-color: #cfe4e4; }
+
+.header-secondary,
+.header-tertiary {
+  text-transform: uppercase;
+  letter-spacing: .5rem; }
+
+.header-secondary {
+  font-size: 6rem; }
+  .header-secondary__dark {
+    color: #4d4343; }
+  .header-secondary__light {
+    color: #e99fbb; }
+
+.header-tertiary {
+  padding-bottom: 2rem;
+  color: #e99fbb;
+  font-size: 2.5rem; }
+  .header-tertiary--dark {
+    color: #4d4343; }
+
+.paragraph {
+  margin-top: 0;
+  font-size: 2rem; }
+  .paragraph--bg-dark {
+    background-color: #4d4343;
+    color: white; }
+  .paragraph--bg-light {
+    background-color: #32e8cf;
+    color: black; }
+
+.u-shadow {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
+
+.u-padding-small {
+  padding: 2rem; }
+
+.u-padding-medium {
+  padding: 4rem; }
+
+.u-padding-large {
+  padding: 6rem; }
+
+.u-border-radius-small {
+  border-radius: 5px; }
+
+.u-border-radius-tl-tr-small {
+  border-radius: 5px 5px 0 0; }
+
+.u-border-radius-bl-br-small {
+  border-radius: 0 0 5px 5px; }
+
+.u-margin-right-small {
+  margin-right: 5rem; }
+
+.flex-container {
+  background-color: #f0dfe5;
+  margin: 10rem 10rem 0 10rem; }
+
+.flex-row-1 {
+  display: flex; }
+
+.flex-col-1-of-3 {
+  flex: 1; }
+
+.flex-col-1-of-2 {
+  flex: 3; }
+
+.flex-col-2-of-2 {
+  flex: 1; }
+
+.flex-row-2 {
+  display: flex;
+  overflow: hidden; }
+
+.flex-col-1-of-4 {
+  flex: 1;
+  width: 40rem;
+  height: 40rem; }
 
 .header {
   height: 100vh;
@@ -96,8 +190,33 @@ body {
     opacity: 0;
     z-index: 4;
     animation-delay: 5s;
-    animation: blinking 1s infinite; }
+    animation-name: blinking;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s; }
   .header--animated {
     animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards; }
+
+.section-donuts {
+  padding: 10rem 10rem;
+  margin-bottom: 5rem; }
+  .section-donuts__header {
+    text-align: center; }
+  .section-donuts__photo {
+    overflow: hidden; }
+  .section-donuts__photo > img {
+    width: 100%;
+    transform: scale(1.05);
+    transition: all .4s; }
+  .section-donuts__photo > img:hover {
+    transform: scaleX(1.2) scaleY(1.2); }
+
+.section-about {
+  background-color: #4d4343;
+  padding: 10rem 10rem; }
+  .section-about__header {
+    text-align: center; }
+  .section-about__photo > img {
+    max-width: 100%;
+    max-height: 100%; }
