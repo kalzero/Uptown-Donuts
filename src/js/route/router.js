@@ -1,3 +1,4 @@
+import Axios from "axios";
 
 export default class Router {
 
@@ -31,17 +32,31 @@ export default class Router {
         }
     };
 
-    goToRoute(scope, name) {
+    async goToRoute(scope, name) {
+        //let cors_api_url = "http://cors-anywhere.herokuapp.com/";
+        //let origin = window.location.protocol + "//" + window.location.host;
+        //xhr.open('GET', `${cors_api_url}${origin}/views/_${name}.html`, true);        
         
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', `dist/views/_${name}.html`, true);
-        xhr.send();
+        // let xhr = new XMLHttpRequest();
+        // xhr.open('GET', `/views/_${name}.html`, true);
+        // xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        // xhr.send();
     
-        xhr.onreadystatechange = function() {                
-            if (this.readyState !== 4) return;
-            if (this.status !== 200) return;            
-            scope.root.innerHTML = this.responseText;            
-        };
+        // xhr.onreadystatechange = function() {                
+        //     if (this.readyState !== 4) return;
+        //     if (this.status !== 200) return;            
+        //     scope.root.innerHTML = this.responseText;            
+        // };
+        let origin = window.location.protocol + "//" + window.location.host;
+        let url = `${origin}/views/_${name}.html`;
+        console.log(url);
+        try {
+            const res = await Axios(url);            
+            scope.root.innerHTML = res.request.responseText;
+
+        } catch (err) {
+            console.log(err);
+        }
     }
 }
 
