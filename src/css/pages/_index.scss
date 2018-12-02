@@ -34,3 +34,17 @@
         max-height: 100%;
     }
 }
+
+.section-menu {
+    margin-top: 10rem;
+    text-align: center;
+   
+    &__list {        
+        list-style: none;
+        text-decoration: none;
+    }
+
+    &__list-item {
+        font-size: 2rem;
+    }
+}

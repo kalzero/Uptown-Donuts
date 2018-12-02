@@ -125,8 +125,15 @@ body {
   margin-right: 5rem; }
 
 .flex-container {
-  background-color: #f0dfe5;
   margin: 10rem 10rem 0 10rem; }
+  .flex-container--bgcolor1 {
+    background-color: #cfe4e4; }
+  .flex-container--bgcolor2 {
+    background-color: #f0dfe5; }
+  .flex-container--bgcolor3 {
+    background-color: #4d4343; }
+  .flex-container--bglight {
+    background: #fefefe; }
 
 .flex-row-1 {
   display: flex; }
@@ -148,6 +155,9 @@ body {
   flex: 1;
   width: 40rem;
   height: 40rem; }
+
+.flex-align-center {
+  align-items: center; }
 
 .header {
   height: 100vh;
@@ -220,3 +230,12 @@ body {
   .section-about__photo > img {
     max-width: 100%;
     max-height: 100%; }
+
+.section-menu {
+  margin-top: 10rem;
+  text-align: center; }
+  .section-menu__list {
+    list-style: none;
+    text-decoration: none; }
+  .section-menu__list-item {
+    font-size: 2rem; }

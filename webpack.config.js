@@ -63,13 +63,13 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({    
             inject: false,
-            template: "./src/pages/_menu.html",
-            filename: "./pages/_menu.html"
+            template: "./src/views/_menu.html",
+            filename: "./views/_menu.html"
         }),
         new HtmlWebpackPlugin({    
             inject: false,
-            template: "./src/pages/_intro.html",
-            filename: "./pages/_intro.html"
+            template: "./src/views/_home.html",
+            filename: "./views/_home.html"
         })
         //new CleanWebpackPlugin(["dist"])
     ]

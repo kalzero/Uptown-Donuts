@@ -1,18 +1,17 @@
 import "../css/main.scss";
-import imgbuilding from "../img/uptown-buildings.png";
-import imgdonut from "../img/uptown-donut.png";
-import imgdonutarrow from "../img/uptown-donut-arrow-small.png";
-import * as loader from "./helper/htmlLoader";
+import Route from "./route/route";
+import Router from "./route/router";
+// load every image needed
+const requireContext = require.context("../img", true, /^\.\/.*\.png$/);
+requireContext.keys().map(requireContext);
 
-// when page load for the first time go to intro
-window.onload = () => {
-    loader.getPage("intro");
-};
 
-// get html page based off the nav buttons
-const menuItems = ["nav-menu"];
-menuItems.forEach((cur) => {
-    document.getElementById(cur).addEventListener("click", (e) => {
-        loader.getPage("menu");      
-    });
-});
+// Load all routes
+const routes = [
+    new Route("home", "_home.html", true),
+    new Route("menu", "_menu.html")
+]; 
+
+// Register Routes to load
+const router = new Router(routes);
+router.init();
