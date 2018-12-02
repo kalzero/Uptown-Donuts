@@ -10,8 +10,7 @@ body {
     letter-spacing: .5rem; 
 }
 
-.header-secondary {    
-    
+.header-secondary {        
     // background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
     // -webkit-background-clip: text;
     // color: transparent;
@@ -26,6 +25,12 @@ body {
     }
 }
 
+.header-gradient {
+    background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .header-tertiary {
     padding-bottom: 2rem;
     color: $color-secondary;
@@ -33,6 +38,10 @@ body {
     
     &--dark {
         color: $color-tertiary;
+    }
+
+    &--color1 {
+        color: $color-primary;
     }
 }
 
@@ -48,5 +57,9 @@ body {
     &--bg-light {        
         background-color: $color-primary;
         color: black;
+    }
+
+    &--dark {
+        color: $color-tertiary;
     }
 }

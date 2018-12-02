@@ -1,6 +1,10 @@
+// Shadows
+
 .u-shadow {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+// Paddings
 
 .u-padding-small {
     padding: 2rem;
@@ -15,14 +19,43 @@
     border-radius: 5px;
 }
 
+// Border Radius
+
 .u-border-radius-tl-tr-small {
     border-radius: 5px 5px 0 0;
+}
+
+.u-border-radius-tl-bl-small {
+    border-radius: 5px 0 0 5px;
+}
+
+.u-border-radius-tr-br-small {
+    border-radius: 0 5px 5px 0;
 }
 
 .u-border-radius-bl-br-small {
     border-radius: 0 0 5px 5px;
 }
 
+// Borders
+.u-border-t-r-b-solid-small {
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.u-border-t-l-b-solid-small {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.u-border-t-b-solid-small {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+// Margins
 .u-margin-right-small {
     margin-right: 5rem;
 }

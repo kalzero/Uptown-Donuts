@@ -83,12 +83,19 @@ body {
   .header-secondary__light {
     color: #e99fbb; }
 
+.header-gradient {
+  background-image: linear-gradient(to right, #32e8cf, #e99fbb, #4d4343);
+  -webkit-background-clip: text;
+  color: transparent; }
+
 .header-tertiary {
   padding-bottom: 2rem;
   color: #e99fbb;
   font-size: 2.5rem; }
   .header-tertiary--dark {
     color: #4d4343; }
+  .header-tertiary--color1 {
+    color: #32e8cf; }
 
 .paragraph {
   margin-top: 0;
@@ -99,6 +106,8 @@ body {
   .paragraph--bg-light {
     background-color: #32e8cf;
     color: black; }
+  .paragraph--dark {
+    color: #4d4343; }
 
 .u-shadow {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
@@ -118,8 +127,28 @@ body {
 .u-border-radius-tl-tr-small {
   border-radius: 5px 5px 0 0; }
 
+.u-border-radius-tl-bl-small {
+  border-radius: 5px 0 0 5px; }
+
+.u-border-radius-tr-br-small {
+  border-radius: 0 5px 5px 0; }
+
 .u-border-radius-bl-br-small {
   border-radius: 0 0 5px 5px; }
+
+.u-border-t-r-b-solid-small {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid; }
+
+.u-border-t-l-b-solid-small {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid; }
+
+.u-border-t-b-solid-small {
+  border-top: 1px solid;
+  border-bottom: 1px solid; }
 
 .u-margin-right-small {
   margin-right: 5rem; }
@@ -138,26 +167,29 @@ body {
 .flex-row-1 {
   display: flex; }
 
-.flex-col-1-of-3 {
-  flex: 1; }
+.flex-row-2 {
+  display: flex;
+  overflow: hidden; }
 
 .flex-col-1-of-2 {
   flex: 3; }
 
-.flex-col-2-of-2 {
+.flex-col-1-of-3 {
   flex: 1; }
-
-.flex-row-2 {
-  display: flex;
-  overflow: hidden; }
 
 .flex-col-1-of-4 {
   flex: 1;
   width: 40rem;
   height: 40rem; }
 
+.flex-col-2-of-2 {
+  flex: 1; }
+
 .flex-align-center {
   align-items: center; }
+
+.footer {
+  margin: 0; }
 
 .header {
   height: 100vh;
@@ -233,9 +265,14 @@ body {
 
 .section-menu {
   margin-top: 10rem;
+  margin-bottom: 10rem;
   text-align: center; }
   .section-menu__list {
     list-style: none;
     text-decoration: none; }
   .section-menu__list-item {
+    color: #4d4343;
     font-size: 2rem; }
+  .section-menu__photo > img {
+    max-width: 100%;
+    max-height: 100%; }

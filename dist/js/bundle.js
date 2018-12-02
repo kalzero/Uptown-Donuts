@@ -104,7 +104,18 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./donut-1-small.png\": \"./src/img/donut-1-small.png\",\n\t\"./donut-2-small.png\": \"./src/img/donut-2-small.png\",\n\t\"./donut-3-small.png\": \"./src/img/donut-3-small.png\",\n\t\"./uptown-about-1.png\": \"./src/img/uptown-about-1.png\",\n\t\"./uptown-about-2.png\": \"./src/img/uptown-about-2.png\",\n\t\"./uptown-about-3.png\": \"./src/img/uptown-about-3.png\",\n\t\"./uptown-about-4.png\": \"./src/img/uptown-about-4.png\",\n\t\"./uptown-buildings.png\": \"./src/img/uptown-buildings.png\",\n\t\"./uptown-donut-arrow-small.png\": \"./src/img/uptown-donut-arrow-small.png\",\n\t\"./uptown-donut.png\": \"./src/img/uptown-donut.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/img sync recursive ^\\\\.\\\\/.*\\\\.png$\";\n\n//# sourceURL=webpack:///./src/img_sync_^\\.\\/.*\\.png$?");
+eval("var map = {\n\t\"./cinnamon-rolls.png\": \"./src/img/cinnamon-rolls.png\",\n\t\"./donut-1-small.png\": \"./src/img/donut-1-small.png\",\n\t\"./donut-2-small.png\": \"./src/img/donut-2-small.png\",\n\t\"./donut-3-small.png\": \"./src/img/donut-3-small.png\",\n\t\"./pistachio.png\": \"./src/img/pistachio.png\",\n\t\"./plain-old-fashion.png\": \"./src/img/plain-old-fashion.png\",\n\t\"./pumpkin-spice.png\": \"./src/img/pumpkin-spice.png\",\n\t\"./uptown-about-1.png\": \"./src/img/uptown-about-1.png\",\n\t\"./uptown-about-2.png\": \"./src/img/uptown-about-2.png\",\n\t\"./uptown-about-3.png\": \"./src/img/uptown-about-3.png\",\n\t\"./uptown-about-4.png\": \"./src/img/uptown-about-4.png\",\n\t\"./uptown-buildings.png\": \"./src/img/uptown-buildings.png\",\n\t\"./uptown-donut-arrow-small.png\": \"./src/img/uptown-donut-arrow-small.png\",\n\t\"./uptown-donut.png\": \"./src/img/uptown-donut.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/img sync recursive ^\\\\.\\\\/.*\\\\.png$\";\n\n//# sourceURL=webpack:///./src/img_sync_^\\.\\/.*\\.png$?");
+
+/***/ }),
+
+/***/ "./src/img/cinnamon-rolls.png":
+/*!************************************!*\
+  !*** ./src/img/cinnamon-rolls.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"img/cinnamon-rolls.png\";\n\n//# sourceURL=webpack:///./src/img/cinnamon-rolls.png?");
 
 /***/ }),
 
@@ -138,6 +149,39 @@ eval("module.exports = \"img/donut-2-small.png\";\n\n//# sourceURL=webpack:///./
 /***/ (function(module, exports) {
 
 eval("module.exports = \"img/donut-3-small.png\";\n\n//# sourceURL=webpack:///./src/img/donut-3-small.png?");
+
+/***/ }),
+
+/***/ "./src/img/pistachio.png":
+/*!*******************************!*\
+  !*** ./src/img/pistachio.png ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"img/pistachio.png\";\n\n//# sourceURL=webpack:///./src/img/pistachio.png?");
+
+/***/ }),
+
+/***/ "./src/img/plain-old-fashion.png":
+/*!***************************************!*\
+  !*** ./src/img/plain-old-fashion.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"img/plain-old-fashion.png\";\n\n//# sourceURL=webpack:///./src/img/plain-old-fashion.png?");
+
+/***/ }),
+
+/***/ "./src/img/pumpkin-spice.png":
+/*!***********************************!*\
+  !*** ./src/img/pumpkin-spice.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"img/pumpkin-spice.png\";\n\n//# sourceURL=webpack:///./src/img/pumpkin-spice.png?");
 
 /***/ }),
 

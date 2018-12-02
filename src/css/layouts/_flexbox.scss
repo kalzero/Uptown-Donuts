@@ -6,6 +6,12 @@
     &--bgcolor3 { background-color: $backcolor-3; }
     &--bglight { background: #fefefe; }
 }
+
+.flex-container-2 {
+
+    &--bgcolor3 { background-color: $backcolor-3; }
+}
+
 .flex-row-1 {
     display: flex;       
 }
@@ -28,8 +34,6 @@
 .flex-col-2-of-2 {
     flex: 1;        
 }
-
-
 
 .flex-align-center {
     align-items: center;
