@@ -70,4 +70,8 @@ body {
     &--dark {
         color: $color-tertiary;
     }
+
+    &--light {
+        color: $color-secondary;
+    }
 }

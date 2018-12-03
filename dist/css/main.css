@@ -62,21 +62,9 @@
 
 html {
   font-size: 62.5%; }
-<<<<<<< HEAD
-  @media (min-width: 112.5em) {
+  @media (max-width: 37.5em) {
     html {
       font-size: 75%; } }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-=======
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 75%; } }
->>>>>>> refactor BEM
 
 body {
   box-sizing: border-box; }
@@ -93,7 +81,7 @@ body {
 
 .header-secondary {
   font-size: 6rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .header-secondary {
       font-size: 2rem; } }
   .header-secondary__dark {
@@ -118,7 +106,7 @@ body {
 .paragraph {
   margin-top: 0;
   font-size: 2rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .paragraph {
       font-size: 1rem; } }
   .paragraph--bg-dark {
@@ -182,7 +170,7 @@ body {
 
 .flex-container {
   margin: 10rem 10rem 0 10rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .flex-container {
       margin: 0; } }
   .flex-container--bgcolor1 {
@@ -272,12 +260,12 @@ body {
 .section-donuts {
   padding: 10rem 10rem;
   margin-bottom: 5rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .section-donuts {
       padding: 2rem 2rem; } }
   .section-donuts__header {
     text-align: center; }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .section-donuts__header {
         margin-bottom: 2rem; } }
   .section-donuts__description {
@@ -313,3 +301,12 @@ body {
   .section-menu__photo > img {
     max-width: 100%;
     max-height: 100%; }
+
+.icons {
+  list-style: none; }
+  .icons__item {
+    display: inline-block; }
+    .icons__item--color-fb {
+      color: #3b5999; }
+    .icons__item--color-in {
+      color: #e4405f; }

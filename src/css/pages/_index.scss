@@ -90,6 +90,28 @@
     
         &--color-in {
             color: #e4405f;
+        }      
+
+        &:hover {
+            cursor: pointer;
         }
+        
+        &--color-fb:hover {
+            color: #152f69;
+        }
+    
+        &--color-in:hover {
+            color: #f5768d;
+        } 
+    }
+   
+}
+
+.location {
+    font-size: 2rem;
+    color: #fefefe;
+
+    &__address {
+        margin-bottom: 2rem;
     }
 }
