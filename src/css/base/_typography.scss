@@ -16,6 +16,10 @@ body {
     // color: transparent;
     font-size: 6rem;    
     
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+
     &__dark {
         color: $color-tertiary;
     }
@@ -48,6 +52,10 @@ body {
 .paragraph {         
     margin-top:0;       
     font-size: 2rem;
+
+    @include respond(phone) {
+        font-size: 1rem;
+    }
     
     &--bg-dark {        
         background-color: $color-tertiary;

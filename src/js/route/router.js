@@ -48,12 +48,11 @@ export default class Router {
         //     scope.root.innerHTML = this.responseText;            
         // };
         let origin = window.location.protocol + "//" + window.location.host;
-        let url = `${origin}/views/_${name}.html`;
+        let url = `${origin}/views/_${name}.html`;        
         console.log(url);
         try {
-            const res = await Axios(url);            
-            scope.root.innerHTML = res.request.responseText;
-
+            const res = await Axios(url);   
+            scope.root.innerHTML = res.data;         
         } catch (err) {
             console.log(err);
         }

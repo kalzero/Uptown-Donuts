@@ -6,6 +6,7 @@
 }
 
 @mixin media-respond($breakpoint) {
+    
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };  // 600px
     }
@@ -21,8 +22,4 @@
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content }; // 1800px
     }
-
-
-
-
 }

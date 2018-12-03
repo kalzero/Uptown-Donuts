@@ -1,40 +1,61 @@
 .flex-container {    
     margin: 10rem 10rem 0 10rem;  
 
+    @include respond(phone) {
+        margin: 0;          
+    }
+
     &--bgcolor1 { background-color: $backcolor-1; }
     &--bgcolor2 { background-color: $backcolor-2; }    
     &--bgcolor3 { background-color: $backcolor-3; }
     &--bglight { background: #fefefe; }
+
+    &__row {
+        display: flex;        
+    }      
+
+    &__col-1-of-2 {
+        flex: 3; 
+    }
+
+    &__col-1-of-3 {
+        flex: 1;                    
+    }
+
+    &__col-1-of-4 {
+        flex: 1;
+        width: 40rem;
+        height: 40rem;
+        overflow: hidden;
+    }
+
+    &__col-2-of-2 {
+        flex: 1; 
+    }
+
+    
 }
 
 .flex-container-2 {
+    
 
-    &--bgcolor3 { background-color: $backcolor-3; }
-}
+    &__row {
+        display: flex;            
+    }
 
-.flex-row-1 {
-    display: flex;       
-}
-.flex-row-2 {
-    display: flex;
-    overflow: hidden;
-}
+    &__col-2-of-2 {
+        flex: 2;
+    }
 
-.flex-col-1-of-2 {
-    flex: 3;
-}
-.flex-col-1-of-3 {
-    flex: 1;    
-}
-.flex-col-1-of-4 {
-    flex: 1;
-    width: 40rem;
-    height: 40rem;
-}
-.flex-col-2-of-2 {
-    flex: 1;        
+    &--bgcolor3 {
+        background-color: $backcolor-3; 
+    }
 }
 
-.flex-align-center {
-    align-items: center;
-}
+// .flex-col-2-of-2 {
+//     flex: 1;        
+// }
+
+// .flex-align-center {
+//     align-items: center;
+// }
