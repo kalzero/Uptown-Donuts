@@ -117,6 +117,8 @@ body {
     color: black; }
   .paragraph--dark {
     color: #4d4343; }
+  .paragraph--light {
+    color: #e99fbb; }
 
 .u-shadow {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
@@ -129,6 +131,9 @@ body {
 
 .u-padding-large {
   padding: 6rem; }
+
+.u-padding-verylarge {
+  padding: 10rem; }
 
 .u-border-radius-small {
   border-radius: 5px; }
@@ -204,6 +209,9 @@ body {
 .flex-container-2--bgcolor3 {
   background-color: #4d4343; }
 
+.flex-container-2--bgcolor4 {
+  background-color: #7e7575; }
+
 .footer {
   margin: 0; }
 
@@ -256,6 +264,29 @@ body {
     animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards; }
+
+.nav {
+  position: relative;
+  height: 100px;
+  background-color: #32e8cf; }
+  .nav__logo {
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-left: 4rem; }
+  .nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .nav__list {
+    font-size: 2rem;
+    list-style: none; }
+    .nav__list-item {
+      display: inline-block;
+      margin-right: 5rem; }
+    .nav__list-item > a {
+      text-decoration: none; }
 
 .section-donuts {
   padding: 10rem 10rem;
@@ -310,3 +341,15 @@ body {
       color: #3b5999; }
     .icons__item--color-in {
       color: #e4405f; }
+    .icons__item:hover {
+      cursor: pointer; }
+    .icons__item--color-fb:hover {
+      color: #152f69; }
+    .icons__item--color-in:hover {
+      color: #f5768d; }
+
+.location {
+  font-size: 2rem;
+  color: #fefefe; }
+  .location__address {
+    margin-bottom: 2rem; }

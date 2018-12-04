@@ -1,0 +1,36 @@
+.nav {    
+    position: relative;
+    height: 100px;
+    background-color: $color-primary;   
+    //background-color: transparent;          
+
+    &__logo {
+        position: absolute;
+        display: inline-block;
+        height: 100px;
+        width: 100px;        
+        margin-left: 4rem;            
+    }
+
+    &__container {    
+        height: 100px;
+        display: flex;
+        align-items: center;   
+        justify-content: flex-end;     
+    }   
+
+    &__list {
+        font-size: 2rem;       
+        list-style: none;
+        
+        &-item {
+            display: inline-block;
+            margin-right: 5rem;
+        }        
+
+        &-item > a {
+            text-decoration: none;
+        }
+
+    }
+}
