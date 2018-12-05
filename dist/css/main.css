@@ -174,10 +174,21 @@ body {
   margin-right: 5rem; }
 
 .flex-container {
-  margin: 10rem 10rem 0 10rem; }
-  @media (max-width: 37.5em) {
-    .flex-container {
-      margin: 0; } }
+  margin: 10rem 10rem 0 10rem;
+  display: flex;
+  justify-content: space-around; }
+  .flex-container__row {
+    display: flex;
+    justify-content: flex-end; }
+  .flex-container__col-1-of-2 {
+    flex: 3; }
+  .flex-container__col-1-of-3 {
+    flex-basis: 32%; }
+  .flex-container__col-1-of-4 {
+    width: 40rem;
+    height: 40rem;
+    overflow: hidden;
+    flex-basis: 50%; }
   .flex-container--bgcolor1 {
     background-color: #cfe4e4; }
   .flex-container--bgcolor2 {
@@ -186,19 +197,9 @@ body {
     background-color: #4d4343; }
   .flex-container--bglight {
     background: #fefefe; }
-  .flex-container__row {
-    display: flex; }
-  .flex-container__col-1-of-2 {
-    flex: 3; }
-  .flex-container__col-1-of-3 {
-    flex: 1; }
-  .flex-container__col-1-of-4 {
-    flex: 1;
-    width: 40rem;
-    height: 40rem;
-    overflow: hidden; }
-  .flex-container__col-2-of-2 {
-    flex: 1; }
+  @media (max-width: 37.5em) {
+    .flex-container {
+      margin: 0; } }
 
 .flex-container-2__row {
   display: flex; }
@@ -216,9 +217,15 @@ body {
   margin: 0; }
 
 .header {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   position: relative; }
+  @media (max-width: 90em) {
+    .header {
+      height: 89vh; } }
+  @media (max-width: 75em) {
+    .header {
+      height: 87vh; } }
   .header__img-sky {
     background: linear-gradient(-180deg, #000d1a, #00284d, #004280, #005cb3, #0077e6, #1a90ff, #4da9ff, #80c1ff);
     background-size: 600% 600%;
@@ -235,6 +242,18 @@ body {
     height: 100%;
     z-index: 5;
     animation-name: brighten; }
+    @media (max-width: 103.125em) {
+      .header__img-buildings {
+        background-size: 55%; } }
+    @media (max-width: 90em) {
+      .header__img-buildings {
+        background-size: 55%; } }
+    @media (max-width: 75em) {
+      .header__img-buildings {
+        background-size: 50%; } }
+    @media (max-width: 56.25em) {
+      .header__img-buildings {
+        background-size: 10%; } }
   .header__img-donut-sun {
     background: url(/img/uptown-donut.png) no-repeat center;
     position: absolute;
@@ -242,9 +261,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     animation-name: riseUp; }
+    @media (max-width: 103.125em) {
+      .header__img-donut-sun {
+        background-size: 10%; } }
+    @media (max-width: 90em) {
+      .header__img-donut-sun {
+        background-size: 8%; } }
+    @media (max-width: 75em) {
+      .header__img-donut-sun {
+        background-size: 10%; } }
+    @media (max-width: 56.25em) {
+      .header__img-donut-sun {
+        background-size: 10%; } }
   .header__img-scroll {
     background: url(/img/uptown-donut-arrow-small.png) no-repeat center;
     position: absolute;
@@ -268,14 +299,15 @@ body {
 .nav {
   position: relative;
   height: 100px;
-  background-color: #32e8cf; }
+  background-color: white; }
   .nav__logo {
     position: absolute;
-    display: block;
+    display: inline-block;
     height: 100px;
     width: 100px;
     margin-left: 4rem; }
   .nav__container {
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end; }
@@ -289,11 +321,15 @@ body {
       text-decoration: none; }
 
 .section-donuts {
-  padding: 10rem 10rem;
+  padding: 10rem;
   margin-bottom: 5rem; }
+  @media (max-width: 103.125em) {
+    .section-donuts {
+      padding: 2rem;
+      margin: 10rem 0; } }
   @media (max-width: 37.5em) {
     .section-donuts {
-      padding: 2rem 2rem; } }
+      padding: 2rem; } }
   .section-donuts__header {
     text-align: center; }
     @media (max-width: 37.5em) {
@@ -313,6 +349,9 @@ body {
 .section-about {
   background-color: #4d4343;
   padding: 10rem 10rem; }
+  @media (max-width: 103.125em) {
+    .section-about__description {
+      margin: 10rem 2rem 5rem 2rem; } }
   .section-about__header {
     text-align: center; }
   .section-about__photo > img {

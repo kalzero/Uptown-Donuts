@@ -1,8 +1,28 @@
 .header {
-    height: 100vh;           
+    height: 90vh;           
     width: 100vw;
     position: relative;
 
+    @include respond(big-laptop) {
+        height: 90.5vh;
+    }
+
+    @include respond(laptop) {
+        height: 88.5vh;
+    }
+    
+    @include respond(tab-land) {
+        height: 87.5vh;
+    }
+
+    @include respond(ipad-pro) {
+        height: 92.5vh;
+    }  
+
+    @include respond(ipad) {
+        height: 90vh;
+    }
+    
     &__img-sky {
         background: linear-gradient(-180deg, #000d1a, #00284d, #004280, #005cb3, #0077e6, #1a90ff, #4da9ff, #80c1ff);
         background-size: 600% 600%;
@@ -21,6 +41,20 @@
         height: 100%;
         z-index: 5;        
         animation-name: brighten;
+
+        @include respond(big-laptop) {
+            background-size: 55%;
+        }
+
+        @include respond(laptop) {
+            background-size: 55%;
+        }
+
+        @include respond(tab-land) {
+            background-size: 50%;
+        }
+       
+
     }
 
     &__img-donut-sun {
@@ -30,9 +64,22 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 4;
-        height: 200px;
-        width: 200px;        
+        height: 100%;
+        width: 100%;        
         animation-name: riseUp;
+
+        @include respond(big-laptop) {
+            background-size: 10%;
+        }
+
+        @include respond(laptop) {
+            background-size: 8%;
+        }
+
+        @include respond(tab-land) {
+            background-size: 10%;
+        }        
+      
     }
 
     &__img-scroll {

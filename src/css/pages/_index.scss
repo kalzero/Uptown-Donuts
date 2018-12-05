@@ -1,9 +1,14 @@
 .section-donuts {            
-    padding: 10rem 10rem;
+    padding: 10rem;
     margin-bottom: 5rem;
     
+    @include respond(big-laptop) {
+        padding: 2rem;
+        margin: 10rem 0;
+    }
+
     @include respond(phone) {
-        padding: 2rem 2rem;        
+        padding: 2rem;        
     }
 
     &__header {
@@ -35,7 +40,13 @@
 
 .section-about {
     background-color: $backcolor-3;
-    padding: 10rem 10rem;
+    padding: 10rem 10rem;    
+
+    &__description {
+        @include respond(big-laptop) {
+            margin: 10rem 2rem 5rem 2rem;            
+        }
+    }
 
     &__header {
         text-align: center;
@@ -51,10 +62,6 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
     text-align: center;
-
-    &__content {
-
-    }
    
     &__list {        
         list-style: none;

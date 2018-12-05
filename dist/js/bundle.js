@@ -414,7 +414,7 @@ eval("// shim for using process in browser\nvar process = module.exports = {};\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/css/main.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/index.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\\n\\r\\n    @include respone(big-laptop) {\\r\\n            ^\\r\\n      No mixin named respone\\r\\n      in F:\\\\GitHub\\\\Uptown-Donuts\\\\src\\\\css\\\\layouts\\\\_header.scss (line 6, column 14)\\n    at runLoaders (F:\\\\GitHub\\\\Uptown-Donuts\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:286:20)\\n    at F:\\\\GitHub\\\\Uptown-Donuts\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:364:11\\n    at F:\\\\GitHub\\\\Uptown-Donuts\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:230:18\\n    at context.callback (F:\\\\GitHub\\\\Uptown-Donuts\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:111:13)\\n    at Object.render [as callback] (F:\\\\GitHub\\\\Uptown-Donuts\\\\node_modules\\\\sass-loader\\\\lib\\\\loader.js:52:13)\\n    at Object.done [as callback] (F:\\\\GitHub\\\\Uptown-Donuts\\\\node_modules\\\\neo-async\\\\async.js:8077:18)\\n    at options.error (F:\\\\GitHub\\\\Uptown-Donuts\\\\node_modules\\\\node-sass\\\\lib\\\\index.js:294:32)\");\n\n//# sourceURL=webpack:///./src/css/main.scss?");
 
 /***/ }),
 
@@ -425,7 +425,7 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./cinnamon-rolls.png\": \"./src/img/cinnamon-rolls.png\",\n\t\"./donut-1-small.png\": \"./src/img/donut-1-small.png\",\n\t\"./donut-2-small.png\": \"./src/img/donut-2-small.png\",\n\t\"./donut-3-small.png\": \"./src/img/donut-3-small.png\",\n\t\"./pistachio.png\": \"./src/img/pistachio.png\",\n\t\"./plain-old-fashion.png\": \"./src/img/plain-old-fashion.png\",\n\t\"./pumpkin-spice.png\": \"./src/img/pumpkin-spice.png\",\n\t\"./uptown-about-1.png\": \"./src/img/uptown-about-1.png\",\n\t\"./uptown-about-2.png\": \"./src/img/uptown-about-2.png\",\n\t\"./uptown-about-3.png\": \"./src/img/uptown-about-3.png\",\n\t\"./uptown-about-4.png\": \"./src/img/uptown-about-4.png\",\n\t\"./uptown-buildings.png\": \"./src/img/uptown-buildings.png\",\n\t\"./uptown-donut-arrow-small.png\": \"./src/img/uptown-donut-arrow-small.png\",\n\t\"./uptown-donut.png\": \"./src/img/uptown-donut.png\",\n\t\"./uptownlogo-s.png\": \"./src/img/uptownlogo-s.png\",\n\t\"./uptownlogo-t.png\": \"./src/img/uptownlogo-t.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/img sync recursive ^\\\\.\\\\/.*\\\\.png$\";\n\n//# sourceURL=webpack:///./src/img_sync_^\\.\\/.*\\.png$?");
+eval("var map = {\n\t\"./cinnamon-rolls.png\": \"./src/img/cinnamon-rolls.png\",\n\t\"./clouds.png\": \"./src/img/clouds.png\",\n\t\"./donut-1-small.png\": \"./src/img/donut-1-small.png\",\n\t\"./donut-2-small.png\": \"./src/img/donut-2-small.png\",\n\t\"./donut-3-small.png\": \"./src/img/donut-3-small.png\",\n\t\"./pistachio.png\": \"./src/img/pistachio.png\",\n\t\"./plain-old-fashion.png\": \"./src/img/plain-old-fashion.png\",\n\t\"./pumpkin-spice.png\": \"./src/img/pumpkin-spice.png\",\n\t\"./uptown-about-1.png\": \"./src/img/uptown-about-1.png\",\n\t\"./uptown-about-2.png\": \"./src/img/uptown-about-2.png\",\n\t\"./uptown-about-3.png\": \"./src/img/uptown-about-3.png\",\n\t\"./uptown-about-4.png\": \"./src/img/uptown-about-4.png\",\n\t\"./uptown-buildings.png\": \"./src/img/uptown-buildings.png\",\n\t\"./uptown-donut-arrow-small.png\": \"./src/img/uptown-donut-arrow-small.png\",\n\t\"./uptown-donut.png\": \"./src/img/uptown-donut.png\",\n\t\"./uptownlogo-s.png\": \"./src/img/uptownlogo-s.png\",\n\t\"./uptownlogo-t.png\": \"./src/img/uptownlogo-t.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/img sync recursive ^\\\\.\\\\/.*\\\\.png$\";\n\n//# sourceURL=webpack:///./src/img_sync_^\\.\\/.*\\.png$?");
 
 /***/ }),
 
@@ -437,6 +437,17 @@ eval("var map = {\n\t\"./cinnamon-rolls.png\": \"./src/img/cinnamon-rolls.png\",
 /***/ (function(module, exports) {
 
 eval("module.exports = \"img/cinnamon-rolls.png\";\n\n//# sourceURL=webpack:///./src/img/cinnamon-rolls.png?");
+
+/***/ }),
+
+/***/ "./src/img/clouds.png":
+/*!****************************!*\
+  !*** ./src/img/clouds.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"img/clouds.png\";\n\n//# sourceURL=webpack:///./src/img/clouds.png?");
 
 /***/ }),
 
