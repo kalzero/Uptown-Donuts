@@ -7,6 +7,14 @@
 
 @mixin respond($breakpoint) {
 
+    @if $breakpoint == galaxy {
+        @media (max-width: 22.5em) { @content }; // 360px
+    }
+
+    @if $breakpoint == iphonex {
+        @media (max-width: 23.44em) { @content }; // 375px
+    }
+
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };  // 600px
     }
@@ -22,10 +30,6 @@
     @if $breakpoint == ipad-pro {
         @media (max-width: 64em) { @content };  // 1024px
     }
-
-    @if $breakpoint == tab-land {
-        @media (max-width: 75em) { @content }; // 1200px
-    }    
 
     @if $breakpoint == laptop {
         @media (max-width: 90em) { @content }; // 1440px

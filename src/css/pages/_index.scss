@@ -11,26 +11,39 @@
         padding: 2rem;        
     }
 
+    @include respond(iphonex) {
+
+    }
+
     &__header {
         text-align: center;
         @include respond(phone) {
             margin-bottom: 2rem;
-        }        
+        }   
     }
 
     &__description {
         padding: 5rem;
+
+        @include respond(iphonex) {
+            padding: 2rem;               
+        }
+
     }
 
     &__photo {
-        overflow: hidden;  
-        
+        overflow: hidden;         
     }
 
     &__photo > img {          
         width: 100%;    
         transform: scale(1.05);
-        transition: all .4s;            
+        transition: all .4s;   
+        
+        @include respond(iphonex) {
+            width: auto;
+            transform: scale(1.10);
+        }
     }
 
     &__photo > img:hover {

@@ -220,12 +220,25 @@ body {
   height: 90vh;
   width: 100vw;
   position: relative; }
+  @media (max-width: 105em) {
+    .header {
+      height: 90vh;
+      width: 100vw; } }
   @media (max-width: 90em) {
     .header {
-      height: 89vh; } }
-  @media (max-width: 75em) {
+      height: 88.5vh; } }
+  @media (max-width: 64em) {
     .header {
-      height: 87vh; } }
+      height: 92.5vh; } }
+  @media (max-width: 48em) {
+    .header {
+      height: 90vh; } }
+  @media (max-width: 37.5em) {
+    .header {
+      height: 93vh; } }
+  @media (max-width: 23.44em) {
+    .header {
+      height: 95vh; } }
   .header__img-sky {
     background: linear-gradient(-180deg, #000d1a, #00284d, #004280, #005cb3, #0077e6, #1a90ff, #4da9ff, #80c1ff);
     background-size: 600% 600%;
@@ -242,18 +255,18 @@ body {
     height: 100%;
     z-index: 5;
     animation-name: brighten; }
-    @media (max-width: 103.125em) {
+    @media (max-width: 105em) {
       .header__img-buildings {
         background-size: 55%; } }
     @media (max-width: 90em) {
       .header__img-buildings {
         background-size: 55%; } }
-    @media (max-width: 75em) {
+    @media (max-width: 64em) {
       .header__img-buildings {
-        background-size: 50%; } }
-    @media (max-width: 56.25em) {
+        background-size: 85%; } }
+    @media (max-width: 48em) {
       .header__img-buildings {
-        background-size: 10%; } }
+        background-size: 75%; } }
   .header__img-donut-sun {
     background: url(/img/uptown-donut.png) no-repeat center;
     position: absolute;
@@ -264,18 +277,12 @@ body {
     height: 100%;
     width: 100%;
     animation-name: riseUp; }
-    @media (max-width: 103.125em) {
+    @media (max-width: 105em) {
       .header__img-donut-sun {
         background-size: 10%; } }
     @media (max-width: 90em) {
       .header__img-donut-sun {
         background-size: 8%; } }
-    @media (max-width: 75em) {
-      .header__img-donut-sun {
-        background-size: 10%; } }
-    @media (max-width: 56.25em) {
-      .header__img-donut-sun {
-        background-size: 10%; } }
   .header__img-scroll {
     background: url(/img/uptown-donut-arrow-small.png) no-repeat center;
     position: absolute;
@@ -323,7 +330,7 @@ body {
 .section-donuts {
   padding: 10rem;
   margin-bottom: 5rem; }
-  @media (max-width: 103.125em) {
+  @media (max-width: 105em) {
     .section-donuts {
       padding: 2rem;
       margin: 10rem 0; } }
@@ -349,7 +356,7 @@ body {
 .section-about {
   background-color: #4d4343;
   padding: 10rem 10rem; }
-  @media (max-width: 103.125em) {
+  @media (max-width: 105em) {
     .section-about__description {
       margin: 10rem 2rem 5rem 2rem; } }
   .section-about__header {

@@ -3,26 +3,14 @@
     width: 100vw;
     position: relative;
 
-    @include respond(big-laptop) {
-        height: 90.5vh;
-    }
-
-    @include respond(laptop) {
-        height: 88.5vh;
-    }
-    
-    @include respond(tab-land) {
-        height: 87.5vh;
-    }
-
-    @include respond(ipad-pro) {
-        height: 92.5vh;
-    }  
-
-    @include respond(ipad) {
-        height: 90vh;
-    }
-    
+    @include respond(big-laptop) { height: 90vh; }
+    @include respond(laptop) { height: 88.5vh; }  
+    @include respond(ipad-pro) { height: 92.5vh; }  
+    @include respond(ipad) { height: 90vh; }
+    @include respond(phone) { height: 93vh; }
+    @include respond(iphonex) { height: 87vh; }
+    @include respond(galaxy) { height: 84vh; }
+ 
     &__img-sky {
         background: linear-gradient(-180deg, #000d1a, #00284d, #004280, #005cb3, #0077e6, #1a90ff, #4da9ff, #80c1ff);
         background-size: 600% 600%;
@@ -42,19 +30,13 @@
         z-index: 5;        
         animation-name: brighten;
 
-        @include respond(big-laptop) {
-            background-size: 55%;
-        }
-
-        @include respond(laptop) {
-            background-size: 55%;
-        }
-
-        @include respond(tab-land) {
-            background-size: 50%;
-        }
-       
-
+        @include respond(big-laptop) { background-size: 55%; }
+        @include respond(laptop) { background-size: 55%; }
+        @include respond(ipad-pro) { background-size: 95%; }  
+        @include respond(ipad) { background-size: 85%; }       
+        @include respond(phone) { background-size: 55%; }    
+        @include respond(iphonex) { background-size: 135%; }    
+        @include respond(galaxy) { background-size: 100%; }
     }
 
     &__img-donut-sun {
@@ -68,18 +50,13 @@
         width: 100%;        
         animation-name: riseUp;
 
-        @include respond(big-laptop) {
-            background-size: 10%;
-        }
-
-        @include respond(laptop) {
-            background-size: 8%;
-        }
-
-        @include respond(tab-land) {
-            background-size: 10%;
-        }        
-      
+        @include respond(big-laptop) { background-size: 10%; }
+        @include respond(laptop) { background-size: 8%; }
+        @include respond(ipad-pro) { background-size: 18%; }  
+        @include respond(ipad) { background-size: 18%; }       
+        @include respond(phone) { background-size: 15%; }    
+        @include respond(iphonex) { background-size: 25%; }    
+        @include respond(galaxy) { background-size: 20%; }      
     }
 
     &__img-scroll {
@@ -94,6 +71,11 @@
         animation-name: blinking;
         animation-iteration-count: infinite;
         animation-duration: 1.5s;    
+
+        @include respond(laptop) { background-size: 80% }
+        @include respond(ipad-pro) { background-size: 100% }
+        @include respond(iphonex) { background-size: 100% }
+        @include respond(galaxy) { background-size: 80% }
     }
 
     &--animated {
