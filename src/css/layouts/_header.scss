@@ -1,7 +1,8 @@
 .header {
     height: 90vh;           
-    width: 100vw;
+    width: 100%;
     position: relative;
+    
 
     @include respond(big-laptop) { height: 90vh; }
     @include respond(laptop) { height: 88.5vh; }  
@@ -28,6 +29,7 @@
         left: 0;  
         height: 100%;
         z-index: 5;        
+        
         animation-name: brighten;
 
         @include respond(big-laptop) { background-size: 55%; }
@@ -47,7 +49,7 @@
         transform: translate(-50%, -50%);
         z-index: 4;
         height: 100%;
-        width: 100%;        
+        width: 100%;                
         animation-name: riseUp;
 
         @include respond(big-laptop) { background-size: 10%; }

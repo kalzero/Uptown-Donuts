@@ -7,19 +7,38 @@
         margin: 10rem 0;
     }
 
+    @include respond(ipad) {
+        margin-top: 2rem;
+        padding: 0;
+    }
+
     @include respond(phone) {
-        padding: 2rem;        
+        margin: 2rem;
     }
 
     @include respond(iphonex) {
-
+        //margin: 0;
+        margin: 0;
+        padding: 2rem 0;
     }
 
     &__header {
-        text-align: center;
+        text-align: center;        
+
         @include respond(phone) {
             margin-bottom: 2rem;
         }   
+    }
+
+    &__header p {
+        @include respond(iphonex) {
+            padding: 0 1.2rem;            
+            word-wrap: break-word;
+        }
+
+        @include respond(galaxy) {
+            padding: 0 0.66rem;
+        }
     }
 
     &__description {

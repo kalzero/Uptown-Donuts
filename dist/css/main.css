@@ -1,7 +1,7 @@
 @keyframes riseUp {
   0% {
     opacity: 0;
-    transform: translate(-50%, 40rem); }
+    transform: translate(-50%, 10rem); }
   80% {
     opacity: 0.5; }
   90% {
@@ -98,6 +98,9 @@ body {
   padding-bottom: 2rem;
   color: #e99fbb;
   font-size: 2.5rem; }
+  @media (max-width: 23.44em) {
+    .header-tertiary {
+      font-size: 1.5rem; } }
   .header-tertiary--dark {
     color: #4d4343; }
   .header-tertiary--color1 {
@@ -177,6 +180,15 @@ body {
   margin: 10rem 10rem 0 10rem;
   display: flex;
   justify-content: space-around; }
+  @media (max-width: 64em) {
+    .flex-container {
+      flex-wrap: wrap; } }
+  @media (max-width: 48em) {
+    .flex-container {
+      margin: 5rem; } }
+  @media (max-width: 23.44em) {
+    .flex-container {
+      margin: 0; } }
   .flex-container__row {
     display: flex;
     justify-content: flex-end; }
@@ -184,6 +196,13 @@ body {
     flex: 3; }
   .flex-container__col-1-of-3 {
     flex-basis: 32%; }
+    @media (max-width: 64em) {
+      .flex-container__col-1-of-3 {
+        flex-basis: 85%;
+        margin: 5rem 0; } }
+    @media (max-width: 23.44em) {
+      .flex-container__col-1-of-3 {
+        margin: 2rem; } }
   .flex-container__col-1-of-4 {
     width: 40rem;
     height: 40rem;
@@ -222,8 +241,7 @@ body {
   position: relative; }
   @media (max-width: 105em) {
     .header {
-      height: 90vh;
-      width: 100vw; } }
+      height: 90vh; } }
   @media (max-width: 90em) {
     .header {
       height: 88.5vh; } }
@@ -238,7 +256,10 @@ body {
       height: 93vh; } }
   @media (max-width: 23.44em) {
     .header {
-      height: 95vh; } }
+      height: 87vh; } }
+  @media (max-width: 22.5em) {
+    .header {
+      height: 84vh; } }
   .header__img-sky {
     background: linear-gradient(-180deg, #000d1a, #00284d, #004280, #005cb3, #0077e6, #1a90ff, #4da9ff, #80c1ff);
     background-size: 600% 600%;
@@ -263,10 +284,19 @@ body {
         background-size: 55%; } }
     @media (max-width: 64em) {
       .header__img-buildings {
-        background-size: 85%; } }
+        background-size: 95%; } }
     @media (max-width: 48em) {
       .header__img-buildings {
-        background-size: 75%; } }
+        background-size: 85%; } }
+    @media (max-width: 37.5em) {
+      .header__img-buildings {
+        background-size: 55%; } }
+    @media (max-width: 23.44em) {
+      .header__img-buildings {
+        background-size: 135%; } }
+    @media (max-width: 22.5em) {
+      .header__img-buildings {
+        background-size: 100%; } }
   .header__img-donut-sun {
     background: url(/img/uptown-donut.png) no-repeat center;
     position: absolute;
@@ -283,6 +313,21 @@ body {
     @media (max-width: 90em) {
       .header__img-donut-sun {
         background-size: 8%; } }
+    @media (max-width: 64em) {
+      .header__img-donut-sun {
+        background-size: 18%; } }
+    @media (max-width: 48em) {
+      .header__img-donut-sun {
+        background-size: 18%; } }
+    @media (max-width: 37.5em) {
+      .header__img-donut-sun {
+        background-size: 15%; } }
+    @media (max-width: 23.44em) {
+      .header__img-donut-sun {
+        background-size: 25%; } }
+    @media (max-width: 22.5em) {
+      .header__img-donut-sun {
+        background-size: 20%; } }
   .header__img-scroll {
     background: url(/img/uptown-donut-arrow-small.png) no-repeat center;
     position: absolute;
@@ -298,6 +343,18 @@ body {
     animation-name: blinking;
     animation-iteration-count: infinite;
     animation-duration: 1.5s; }
+    @media (max-width: 90em) {
+      .header__img-scroll {
+        background-size: 80%; } }
+    @media (max-width: 64em) {
+      .header__img-scroll {
+        background-size: 100%; } }
+    @media (max-width: 23.44em) {
+      .header__img-scroll {
+        background-size: 100%; } }
+    @media (max-width: 22.5em) {
+      .header__img-scroll {
+        background-size: 80%; } }
   .header--animated {
     animation-duration: 5s;
     animation-timing-function: ease-out;
@@ -306,7 +363,8 @@ body {
 .nav {
   position: relative;
   height: 100px;
-  background-color: white; }
+  background-color: white;
+  z-index: 5; }
   .nav__logo {
     position: absolute;
     display: inline-block;
@@ -344,12 +402,19 @@ body {
         margin-bottom: 2rem; } }
   .section-donuts__description {
     padding: 5rem; }
+    @media (max-width: 23.44em) {
+      .section-donuts__description {
+        padding: 2rem; } }
   .section-donuts__photo {
     overflow: hidden; }
   .section-donuts__photo > img {
     width: 100%;
     transform: scale(1.05);
     transition: all .4s; }
+    @media (max-width: 23.44em) {
+      .section-donuts__photo > img {
+        width: auto;
+        transform: scale(1.1); } }
   .section-donuts__photo > img:hover {
     transform: scaleX(1.2) scaleY(1.2); }
 
