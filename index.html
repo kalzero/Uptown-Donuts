@@ -11,37 +11,54 @@
 </head>
 <body>
     
-    <div class="nav">
-        <ul>
-            <li><a href="#home"class="nav-bar" id="nav-home">Home</a></li>
-            <li><a href="#menu"class="nav-bar" id="nav-menu">Menu</a></li>
-        </ul>
-    </div>
+    <nav class="nav">    
+
+        <img src="img/uptownlogo-s.png" alt="Uptown Donuts logo" class="nav__logo">
+        <div class="nav__container">            
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="#home" id="nav-home">Home</a></li>
+                <li class="nav__list-item"><a href="#menu" id="nav-menu">Menu</a></li>
+            </ul>
+        </div>                     
+    </nav>
+    
     <main>
         <div id="app">
 
         </div>
     </main>    
     
+    <!-- Make this load after main-->
     <footer class="footer" id="footer">
-        <div class="flex-container-2 flex-container-2--bgcolor3">
-            <div class="flex-row-1">
-                <div class="flex-col-2-of-2">
+        <div class="footer_content flex-container-2 flex-container-2--bgcolor4">
+            <!-- <div class="flex-container-2__row u-padding-verylarge">
+                <div class="flex-container-2__col-2-of-2">
                     <h3 class="header-tertiary header-tertiary--color1">
                         You deserve a donut
                     </h3>
-                </div>
-                <div class="flex-col-2-of-2">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <p class="paragraph paragraph--light">Follow Us</p>
+                    <ul class="icons">
+                        <li class="icons__item"><ion-icon class="icons__item--color-fb" name="logo-facebook" size="large"></ion-icon></a></li>                        
+                        <li class="icons__item"><ion-icon class="icons__item--color-in" name="logo-instagram" size="large"></ion-icon></li>                        
                     </ul>
                 </div>
-            </div>
+                <div class="flex-container-2__col-2-of-2">
+                    <div class="location">                    
+                        <address class="location__address">
+                            Directly across from Truman College<br />
+                            1122 W Wilson Ave<br />
+                            Chicago, IL 60640<br />
+                        </address>
+                        <div class="location__hours">
+                            Mon - Sat : 6 am - 6 pm<br />
+                            Sun : 6 am - 3 pm
+                        </div>
+                    </div>  
+                </div>
+            </div> -->
         </div>
     </footer>
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <script src="js/bundle.js"></script>
 </body>
 </html>
