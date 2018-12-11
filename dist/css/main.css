@@ -237,7 +237,7 @@ body {
 
 .header {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   position: relative; }
   @media (max-width: 105em) {
     .header {
@@ -392,14 +392,29 @@ body {
     .section-donuts {
       padding: 2rem;
       margin: 10rem 0; } }
+  @media (max-width: 48em) {
+    .section-donuts {
+      margin-top: 2rem;
+      padding: 0; } }
   @media (max-width: 37.5em) {
     .section-donuts {
-      padding: 2rem; } }
+      margin: 2rem; } }
+  @media (max-width: 23.44em) {
+    .section-donuts {
+      margin: 0;
+      padding: 2rem 0; } }
   .section-donuts__header {
     text-align: center; }
     @media (max-width: 37.5em) {
       .section-donuts__header {
         margin-bottom: 2rem; } }
+  @media (max-width: 23.44em) {
+    .section-donuts__header p {
+      padding: 0 1.2rem;
+      word-wrap: break-word; } }
+  @media (max-width: 22.5em) {
+    .section-donuts__header p {
+      padding: 0 0.66rem; } }
   .section-donuts__description {
     padding: 5rem; }
     @media (max-width: 23.44em) {

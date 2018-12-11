@@ -1,64 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/collection/icon/svg/logo-facebook.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/collection/icon/svg/logo-instagram.svg">    
-    <title>Uptown Donuts</title>
-</head>
-<body>
-    
-    <nav class="nav">    
-
-        <img src="img/uptownlogo-s.png" alt="Uptown Donuts logo" class="nav__logo">
-        <div class="nav__container">            
-            <ul class="nav__list">
-                <li class="nav__list-item"><a href="#home" id="nav-home">Home</a></li>
-                <li class="nav__list-item"><a href="#menu" id="nav-menu">Menu</a></li>
-            </ul>
-        </div>                     
-    </nav>
-    
-    <main>
-        <div id="app">
-
-        </div>
-    </main>    
-    
-    <!-- Make this load after main-->
-    <footer class="footer" id="footer">
-        <div class="footer_content flex-container-2 flex-container-2--bgcolor4">
-            <div class="flex-container-2__row u-padding-verylarge">
-                <div class="flex-container-2__col-2-of-2">
-                    <h3 class="header-tertiary header-tertiary--color1">
-                        You deserve a donut
-                    </h3>
-                    <p class="paragraph paragraph--light">Follow Us</p>
-                    <ul class="icons">
-                        <li class="icons__item"><ion-icon class="icons__item--color-fb" name="logo-facebook" size="large"></ion-icon></a></li>                        
-                        <li class="icons__item"><ion-icon class="icons__item--color-in" name="logo-instagram" size="large"></ion-icon></li>                        
-                    </ul>
-                </div>
-                <div class="flex-container-2__col-2-of-2">
-                    <div class="location">                    
-                        <address class="location__address">
-                            Directly across from Truman College<br />
-                            1122 W Wilson Ave<br />
-                            Chicago, IL 60640<br />
-                        </address>
-                        <div class="location__hours">
-                            Mon - Sat : 6 am - 6 pm<br />
-                            Sun : 6 am - 3 pm
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
-    <script src="js/bundle.js"></script>
-</body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve '../img/cinnamon-rolls.png' in 'F:\GitHub\Uptown-Donuts\src':
+  Error: Can't resolve '../img/cinnamon-rolls.png' in 'F:\GitHub\Uptown-Donuts\src'
+  Module not found: Error: Can't resolve '../img/pistachio.png' in 'F:\GitHub\Uptown-Donuts\src':
+  Error: Can't resolve '../img/pistachio.png' in 'F:\GitHub\Uptown-Donuts\src'
+  Module not found: Error: Can't resolve '../img/plain-old-fashion.png' in 'F:\GitHub\Uptown-Donuts\src':
+  Error: Can't resolve '../img/plain-old-fashion.png' in 'F:\GitHub\Uptown-Donuts\src'
+  Module not found: Error: Can't resolve '../img/pumpkin-spice.png' in 'F:\GitHub\Uptown-Donuts\src':
+  Error: Can't resolve '../img/pumpkin-spice.png' in 'F:\GitHub\Uptown-Donuts\src'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [Uptown-Donuts]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:296 compile
+    [Uptown-Donuts]/[webpack]/lib/Compiler.js:296:11
+  
+  - Compiler.js:552 hooks.afterCompile.callAsync.err
+    [Uptown-Donuts]/[webpack]/lib/Compiler.js:552:14
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [Uptown-Donuts]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:549 compilation.seal.err
+    [Uptown-Donuts]/[webpack]/lib/Compiler.js:549:30
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [Uptown-Donuts]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1323 hooks.optimizeAssets.callAsync.err
+    [Uptown-Donuts]/[webpack]/lib/Compilation.js:1323:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [Uptown-Donuts]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1314 hooks.optimizeChunkAssets.callAsync.err
+    [Uptown-Donuts]/[webpack]/lib/Compilation.js:1314:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [Uptown-Donuts]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1309 hooks.additionalAssets.callAsync.err
+    [Uptown-Donuts]/[webpack]/lib/Compilation.js:1309:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [Uptown-Donuts]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1305 hooks.optimizeTree.callAsync.err
+    [Uptown-Donuts]/[webpack]/lib/Compilation.js:1305:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [Uptown-Donuts]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1242 Compilation.seal
+    [Uptown-Donuts]/[webpack]/lib/Compilation.js:1242:27
+  
+  - Compiler.js:546 hooks.make.callAsync.err
+    [Uptown-Donuts]/[webpack]/lib/Compiler.js:546:17
+  
+  
+  - Compilation.js:1093 _addModuleChain
+    [Uptown-Donuts]/[webpack]/lib/Compilation.js:1093:12
+  
+  - Compilation.js:1005 processModuleDependencies.err
+    [Uptown-Donuts]/[webpack]/lib/Compilation.js:1005:9
+  
+  - next_tick.js:131 _combinedTickCallback
+    internal/process/next_tick.js:131:7
+  
+  - next_tick.js:180 process._tickCallback
+    internal/process/next_tick.js:180:9
+  
+</pre>

@@ -7,11 +7,11 @@ requireContext.keys().map(requireContext);
 
 
 // Load all routes
-const routes = [
-    new Route("home", "_home.html", true),
-    new Route("menu", "_menu.html")
-]; 
+// const routes = [
+//     new Route("home", "_home.html", true),
+//     new Route("menu", "_menu.html")
+// ]; 
 
 // Register Routes to load
-const router = new Router(routes);
-router.init();
+// const router = new Router(routes);
+// router.init();

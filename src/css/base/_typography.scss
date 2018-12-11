@@ -4,6 +4,7 @@ body {
     background-color: $backcolor-1;
 }
 
+
 .header-secondary,
 .header-tertiary {
     text-transform: uppercase;
@@ -14,15 +15,7 @@ body {
     // background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
     // -webkit-background-clip: text;
     // color: transparent;
-    font-size: 6rem;    
-    
-    @include respond(phone) {
-        font-size: 2rem;
-    }
-
-    @include respond(iphonex) {
-        
-    }
+    font-size: 6rem;       
 
     &__dark {
         color: $color-tertiary;
@@ -42,12 +35,12 @@ body {
 .header-tertiary {
     padding-bottom: 2rem;
     color: $color-secondary;
-    font-size: 2.5rem;
-    
-    @include respond(iphonex) {
-        font-size: 1.5rem;   
-    }
+    font-size: 2.5rem;    
 
+    @include respond-sect(large2) {
+        font-size: 2rem;
+    }
+    
     &--dark {
         color: $color-tertiary;
     }
@@ -57,12 +50,19 @@ body {
     }
 }
 
-.paragraph {         
-    margin-top:0;       
+.paragraph {             
     font-size: 2rem;
 
-    @include respond(phone) {
-        font-size: 1rem;
+    @include respond-sect(largest) {
+        font-size: 1.7rem;
+    }
+
+    @include respond-sect(large2) {
+        font-size: 1.6rem;
+    }
+
+    @include respond-sect(large1) {
+        font-size: 1.4rem;
     }
     
     &--bg-dark {        

@@ -5,7 +5,26 @@
     transform: translate(-50%, -50%);
 }
 
-@mixin respond($breakpoint) {
+@mixin respond-sect($bp) {
+
+    @if $bp == largest {
+        @media (max-width: 100em) { @content }; // 1600 px
+    }
+
+    @if $bp == large2 {
+        @media (max-width: 75em) { @content }; // 1200 px
+    }
+
+    @if $bp == large1 {
+        @media (max-width: 62.5em) { @content }; // 1000 px
+    }
+
+    @if $bp == med {
+        @media (max-width: 54.275em) { @content }; // 870 px
+    }
+}
+
+@mixin respond-anim($breakpoint) {
 
     @if $breakpoint == galaxy {
         @media (max-width: 22.5em) { @content }; // 360px

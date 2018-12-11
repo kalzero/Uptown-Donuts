@@ -60,17 +60,17 @@ module.exports = {
             inject: false,
             template: "./src/index.html",
             filename: "index.html"
-        }),
-        new HtmlWebpackPlugin({    
-            inject: false,
-            template: "./src/views/_menu.html",
-            filename: "./views/_menu.html"
-        }),
-        new HtmlWebpackPlugin({    
-            inject: false,
-            template: "./src/views/_home.html",
-            filename: "./views/_home.html"
         })
+        // new HtmlWebpackPlugin({    
+        //     inject: false,
+        //     template: "./src/views/_menu.html",
+        //     filename: "./views/_menu.html"
+        // }),
+        // new HtmlWebpackPlugin({    
+        //     inject: false,
+        //     template: "./src/views/_home.html",
+        //     filename: "./views/_home.html"
+        // })
         //new CleanWebpackPlugin(["dist"])
     ]
 };

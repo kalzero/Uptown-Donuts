@@ -1,4 +1,5 @@
 import Axios from "axios";
+import { create } from "domain";
 
 export default class Router {
 
@@ -32,7 +33,7 @@ export default class Router {
         }
     };
 
-    async goToRoute(scope, name) {
+    goToRoute(scope, name) {
         //let cors_api_url = "http://cors-anywhere.herokuapp.com/";
         //let origin = window.location.protocol + "//" + window.location.host;
         //xhr.open('GET', `${cors_api_url}${origin}/views/_${name}.html`, true);        
@@ -47,15 +48,50 @@ export default class Router {
         //     if (this.status !== 200) return;            
         //     scope.root.innerHTML = this.responseText;            
         // };
+
+        // try {
+        //     const res = await Axios(url);   
+        //     scope.root.innerHTML = res.data;      
+        //     console.log("success: " + scope.root.innerHTML);
+        // } catch (err) {
+        //     console.log("error" + err);
+        // }
+
+
         let origin = window.location.protocol + "//" + window.location.host;
         let url = `${origin}/views/_${name}.html`;        
         console.log(url);
-        try {
-            const res = await Axios(url);   
-            scope.root.innerHTML = res.data;         
-        } catch (err) {
+        const createCORSRequest = (method, url) => {
+            let xhr = new XMLHttpRequest();
+            if ("withCredentials" in xhr) {
+                xhr.open(method, url, true);
+            } else if (typeof XDomainRequest != "undefined") {
+                xhr = new XDomainRequest();
+                xhr.open(method.url);
+            } else {
+                xhr = null;
+            }
+            return xhr;
+        }
+
+        const xhr = createCORSRequest("GET", url);
+        if (!xhr) {
+            throw new Error("CORS not supported");
+        }
+
+        xhr.onload = () => {
+            let responseText = xhr.responseText;
+            scope.root.innerHTML = responseText; 
+        }
+
+        xhr.onerror = (err) => {
             console.log(err);
         }
+
+        xhr.withCredentials = true;
+        xhr.send();
+
+       
     }
 }
 

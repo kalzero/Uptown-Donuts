@@ -1,53 +1,62 @@
 .section-donuts {            
-    padding: 10rem;
-    margin-bottom: 5rem;
-    
-    @include respond(big-laptop) {
-        padding: 2rem;
-        margin: 10rem 0;
+    padding: 5rem;
+   
+    @include respond-sect(large1) {
+        padding: 5rem 0 0 0;
     }
 
-    @include respond(ipad) {
-        margin-top: 2rem;
-        padding: 0;
+    @include respond-sect(med) {
+        padding: 5rem;
     }
 
-    @include respond(phone) {
-        margin: 2rem;
-    }
-
-    @include respond(iphonex) {
-        //margin: 0;
-        margin: 0;
-        padding: 2rem 0;
-    }
-
-    &__header {
+    &__headline {
         text-align: center;        
-
-        @include respond(phone) {
-            margin-bottom: 2rem;
-        }   
     }
 
-    &__header p {
-        @include respond(iphonex) {
-            padding: 0 1.2rem;            
-            word-wrap: break-word;
+    &__header {        
+        font-size: 6rem;
+        text-transform: uppercase;
+
+        &--dark {
+            color: $color-tertiary;
         }
 
-        @include respond(galaxy) {
-            padding: 0 0.66rem;
+        @include respond-sect(large2) {
+            font-size: 5rem;
+        }
+    
+        @include respond-sect(large1) {
+            font-size: 4rem;
+        }
+    }
+
+    &__paragraph {
+       font-size: 2rem;
+       padding-bottom: 5rem;
+
+       @include respond-sect(large2) {
+            font-size: 2rem;
+        }
+
+        @include respond-sect(large1) {
+            font-size: 1.7rem;
         }
     }
 
     &__description {
-        padding: 5rem;
-
-        @include respond(iphonex) {
-            padding: 2rem;               
+        padding: 5rem;        
+        
+        @include respond-sect(largest) {
+            padding: 3rem;
         }
 
+        @include respond-sect(large2) {
+            font-size: 2rem;
+        }
+    
+        @include respond-sect(large1) {
+            font-size: 1.5rem;
+        }
     }
 
     &__photo {
@@ -57,17 +66,15 @@
     &__photo > img {          
         width: 100%;    
         transform: scale(1.05);
-        transition: all .4s;   
-        
-        @include respond(iphonex) {
-            width: auto;
-            transform: scale(1.10);
-        }
+        transition: all .4s;          
     }
 
     &__photo > img:hover {
         transform: scaleX(1.2) scaleY(1.2);
     }    
+
+    
+
 }
 
 .section-about {
@@ -75,9 +82,7 @@
     padding: 10rem 10rem;    
 
     &__description {
-        @include respond(big-laptop) {
-            margin: 10rem 2rem 5rem 2rem;            
-        }
+       
     }
 
     &__header {
