@@ -11,7 +11,15 @@
         background-color: $backcolor-3;
         
         @include respond-sect(med) {
-            margin: 5rem;
+            margin: 3rem;
+        }
+
+        @include respond-sect(small) {
+            margin: 1rem;
+        }
+
+        @include respond-sect(tiny) {
+            margin: 0;
         }
     }
 
@@ -30,14 +38,78 @@
     }
 
     @include respond-sect(med) {
-        flex-direction: column;  
-        margin: 3rem;     
+        flex-direction: column;      
+        margin: 3rem;                
+    }
+
+    @include respond-sect(smallest) {
+        flex-direction: column;              
+    }
+
+    @include respond-sect(tiny) {
+        margin: 0;
     }
 
     &--bgcolor2 { background-color: $backcolor-2; }    
 }
 
+.flex-container-2 {
+    display: flex;
+    flex: 0 0 100%;    
 
+    @include respond-sect(large2) {
+        flex-direction: column;
+    }
+
+    &__col-1-of-2 {        
+        width: 65%;               
+        flex-direction: column;  
+        
+        @include respond-sect(large2) {
+            width: 100%;            
+        }
+    }
+
+    &__col-2-of-2 {
+        width: 35%;
+        display: flex;     
+        flex-wrap: wrap;   
+        flex-direction: column;
+        overflow: hidden;
+
+        @include respond-sect(large2) {  
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;  
+                                          
+        }
+    }
+
+    &__col-1-of-4 {                        
+        align-items: center;
+        transform: scale(1.05);        
+        
+        @include respond-sect(large3) {
+            
+        }
+
+       
+        @include respond-sect(large2) {             
+            transform: scale(1);
+            
+        }
+    }
+
+
+    &--bgcolor2 { background-color: $backcolor-2; }   
+}
+
+.tmp-color-1 {
+    background-color: #fff;
+}
+.tmp-color-2 {
+    background-color: #333;
+}
 
 // .flex-container {    
 //     margin: 10rem 10rem 0 10rem;    

@@ -40,6 +40,10 @@ body {
     @include respond-sect(large2) {
         font-size: 2rem;
     }
+
+    @include respond-sect(small) {
+        font-size: 1.6rem;
+    }
     
     &--dark {
         color: $color-tertiary;
@@ -63,6 +67,10 @@ body {
 
     @include respond-sect(large1) {
         font-size: 1.4rem;
+    }
+
+    @include respond-sect(small) {
+        font-size: 1.2rem;
     }
     
     &--bg-dark {        

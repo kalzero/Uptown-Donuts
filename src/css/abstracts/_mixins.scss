@@ -11,16 +11,32 @@
         @media (max-width: 100em) { @content }; // 1600 px
     }
 
+    @if $bp == large3 {
+        @media (max-width: 90em) { @content }; // 1440 px
+    }
+
     @if $bp == large2 {
         @media (max-width: 75em) { @content }; // 1200 px
     }
 
     @if $bp == large1 {
-        @media (max-width: 62.5em) { @content }; // 1000 px
+        @media (max-width: 66.875em) { @content }; // 1070 px
     }
 
     @if $bp == med {
         @media (max-width: 54.275em) { @content }; // 870 px
+    }
+
+    @if $bp == small {
+        @media (max-width: 37.5em) { @content }; // 600 px
+    }
+
+    @if $bp == smallest {
+        @media (max-width: 31.25em) { @content }; // 500 px
+    }
+
+    @if $bp == tiny {
+        @media (max-width: 23.4375em) { @content }; // 375 px
     }
 }
 
