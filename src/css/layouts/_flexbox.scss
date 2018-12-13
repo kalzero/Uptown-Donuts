@@ -68,6 +68,10 @@
         @include respond-sect(large2) {
             width: 100%;            
         }
+
+        @include respond-sect(smallest) {             
+            padding: 3rem;            
+        }
     }
 
     &__col-2-of-2 {
@@ -80,35 +84,61 @@
         @include respond-sect(large2) {  
             width: 100%;
             flex-direction: row;
-            flex-wrap: nowrap;  
-                                          
+            flex-wrap: nowrap;              
+            align-items: center;                                        
+        }
+
+        @include respond-sect(small) {
+            flex-direction: column;
         }
     }
 
     &__col-1-of-4 {                        
         align-items: center;
-        transform: scale(1.05);        
+        transform: scale(1.05);               
         
-        @include respond-sect(large3) {
-            
-        }
-
        
         @include respond-sect(large2) {             
-            transform: scale(1);
-            
+            transform: scale(1.23);            
+            overflow: hidden;
         }
+       
     }
 
 
     &--bgcolor2 { background-color: $backcolor-2; }   
 }
 
-.tmp-color-1 {
-    background-color: #fff;
-}
-.tmp-color-2 {
-    background-color: #333;
+.flex-container-3 {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #000;
+    padding: 10rem 0;    
+    margin: auto;
+
+    @include respond-sect(largest) {
+        //padding: 5rem 0;
+    }
+
+    @include respond-sect(large3) {
+        font-size: 1.7rem; 
+    }
+
+    @include respond-sect(large2) {
+        font-size: 1.4rem; 
+        padding: 5rem 0;
+    }
+
+    @include respond-sect(med) {
+        flex-direction: column;
+    }
+
+    &__col-1-of-3 {
+        
+        
+
+
+    }
 }
 
 // .flex-container {    

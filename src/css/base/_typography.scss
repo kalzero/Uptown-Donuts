@@ -37,12 +37,28 @@ body {
     color: $color-secondary;
     font-size: 2.5rem;    
 
-    @include respond-sect(large2) {
+    @include respond-sect(largest) {
         font-size: 2rem;
     }
 
+    @include respond-sect(large3) {
+        font-size: 1.7rem; 
+    }
+
+    @include respond-sect(large2) {
+        font-size: 1.5rem; 
+    }
+
+    @include respond-sect(med) {
+        font-size: 3.2rem;
+    }
+
     @include respond-sect(small) {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
+    }
+
+    @include respond-sect(small) {
+        font-size: 1.8rem;
     }
     
     &--dark {

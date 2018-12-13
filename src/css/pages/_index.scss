@@ -105,6 +105,26 @@
     background-color: $backcolor-3;    
     padding: 5rem 15rem 15rem 15rem;
 
+    @include respond-sect(largest) {
+        padding: 5rem 10rem 10rem 10rem;
+    }
+
+    @include respond-sect(large1) {
+        padding: 5rem 3rem 3rem 3rem;
+    }
+    
+    @include respond-sect(med) {
+        padding: 5rem 8rem 8rem 8rem;
+    }
+
+    @include respond-sect(small) {
+        padding: 5rem;
+    }
+
+    @include respond-sect(smallest) {             
+        padding: 2rem;            
+    }
+
     &__headline {
         text-align: center;
     }
@@ -131,6 +151,28 @@
         font-size: 6rem;
         text-transform: uppercase;
         padding-bottom: 5rem;
+
+        @include respond-sect(large2) {
+            font-size: 5rem;
+        }
+    
+        @include respond-sect(large1) {
+            font-size: 4rem;
+        }
+
+        @include respond-sect(small) {
+            font-size: 2.75rem;
+            
+        }
+
+        @include respond-sect(smallest) {
+            padding-bottom: 2rem;
+        }
+
+        @include respond-sect(tiny) {
+            font-size: 2rem;
+            
+        }
     }
 
     &__photo {
@@ -139,19 +181,99 @@
     }
 }
 
-.section-menu {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    text-align: center;
+.section-menu {    
+    text-align: center;    
+    padding: 5rem 15rem 15rem 15rem;
+    background-color: #fff;
    
+    @include respond-sect(largest) {             
+        padding: 5rem 10rem 10rem 10rem;
+    }
+
+    @include respond-sect(large1) {             
+        padding: 3rem;
+    }
+
+    @include respond-sect(med) {             
+        padding: 8rem;
+    }
+
+    @include respond-sect(small) {             
+        padding: 5rem;
+    }
+
+    @include respond-sect(smallest) {             
+        padding: 2rem;
+    }
+
+    &__header {        
+        font-size: 6rem;
+        text-transform: uppercase;
+
+        &--dark {
+            color: $color-tertiary;
+        }
+
+        @include respond-sect(large2) {
+            font-size: 5rem;
+        }
+    
+        @include respond-sect(large1) {
+            font-size: 4rem;
+        }
+
+        @include respond-sect(small) {
+            font-size: 2.75rem;
+        }
+
+        @include respond-sect(tiny) {
+            font-size: 2rem;
+        }
+    }
+
+    // &__paragraph {
+    //     margin-bottom: 5rem;
+    //     font-size: 2rem;
+    // }
+    &__paragraph {
+        font-size: 2.1rem;
+        line-height: 3.2rem;
+        margin-bottom: 3rem;
+
+        @include respond-sect(largest) {
+            font-size: 2rem;
+        }
+
+        @include respond-sect(large2) {
+            font-size: 1.8rem;
+        }
+
+        @include respond-sect(small) {
+            font-size: 1.5rem;
+        }
+    }
+
     &__list {        
         list-style: none;
         text-decoration: none;
+        font-size: 2rem;
+
+        @include respond-sect(largest) {             
+            font-size: 1.7rem;
+        }
+
+        @include respond-sect(med) {             
+            font-size: 2.2rem;
+        }
+
+        @include respond-sect(small) {             
+            font-size: 1.8rem;
+        }
     }
 
     &__list-item {
         color: $color-tertiary;
-        font-size: 2rem;
+        
     }
 
     &__photo > img {
