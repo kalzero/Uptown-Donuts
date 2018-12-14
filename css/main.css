@@ -335,7 +335,7 @@ body {
     animation-name: daylight;
     z-index: 1; }
   .header__img-buildings {
-    background: transparent url(./img/uptown-buildings.png) repeat-x bottom;
+    background: transparent url(../img/uptown-buildings.png) repeat-x bottom;
     position: absolute;
     width: 100%;
     top: 0;
@@ -365,7 +365,7 @@ body {
       .header__img-buildings {
         background-size: 100%; } }
   .header__img-donut-sun {
-    background: url(./img/uptown-donut.png) no-repeat center;
+    background: url(../img/uptown-donut.png) no-repeat center;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -396,7 +396,7 @@ body {
       .header__img-donut-sun {
         background-size: 20%; } }
   .header__img-scroll {
-    background: url(./img/uptown-donut-arrow-small.png) no-repeat center;
+    background: url(../img/uptown-donut-arrow-small.png) no-repeat center;
     position: absolute;
     top: 50%;
     left: 50%;
