@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/collection/icon/svg/logo-facebook.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/collection/icon/svg/logo-facebook.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/collection/icon/svg/logo-instagram.svg">    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600|Dancing+Script:400,700" rel="stylesheet">
     <title>Uptown Donuts</title>
 </head>
 <body>
@@ -35,8 +36,8 @@
                 <div class="section-donuts__headline">
                     <!-- <h2 class="header-secondary header-secondary__dark">Gooey Delicious Donuts</h2> -->
                     <h2 class="section-donuts__header section-donuts__header--dark">Gooey Delicious Donuts</h2>
-                    <p class="section-donuts__paragraph">Freshly baked donuts every morning that will entice your senses.
-                        Each and every bite of our donuts will bring an enjoyable moment that you will never forget.</p>                
+                    <div class="section-donuts__paragraph"><p>Freshly baked donuts every morning that will entice your senses. 
+                        Each and every bite of our donuts will bring an enjoyable moment that you will never forget.</p></div>                
                 </div>
                 <div class="section-donuts__description flex-container flex-container--bgcolor2 u-border-radius-small">
                         <div class="flex-container__col-1-of-3 u-shadow">                     
@@ -47,9 +48,7 @@
                                 <h3 class="header-tertiary">
                                     Delicious
                                 </h3>
-                                <div class="paragraph u-border-radius-bl-br-small">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, soluta fugiat repellat quod voluptatibus eius, doloremque cum autem suscipit molestias aliquid amet consequatur officia, repellendus architecto ex a qui quia.</p>
-                                </div>                    
+                                <p class="paragraph u-border-radius-bl-br-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, soluta fugiat repellat quod voluptatibus eius, doloremque cum autem suscipit molestias aliquid amet consequatur officia, repellendus architecto ex a qui quia.</p>                    
                             </div>                        
                         </div>
                         <div class="flex-container__col-1-of-3 u-shadow">                       
@@ -78,44 +77,56 @@
             </section>
             
             <section class="section-about" id="section-about">
-                <!-- <div class="section-about__header">
-                    <h2 class="header-secondary header-secondary__light">Origin</h2>                
+                <div class="section-about__headline">
+                    <h2 class="section-about__header header-secondary__light header-gradient">Origin</h2>                
                 </div>
-                <div class="section-about__description flex-container flex-container--bgcolor2 u-border-radius-small">            
-                    <div class="flex-container__col-1-of-2 u-padding-large">
+                <div class="section-about__description flex-container-2 flex-container-2--bgcolor2 u-border-radius-small">            
+                    <div class="flex-container-2__col-1-of-2 u-padding-large tmp-color-1">
                         <h3 class="header-tertiary header-tertiary--dark">
                             Established. <br />                        
                             Uptown Chicago. <br />
                             2018.
                         </h3>
                         <div class="section-about__story">
-                            <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat officiis sit tempore? Perferendis consectetur delectus esse non exercitationem voluptas suscipit eum sunt. Dolore, molestias. Hic libero id quis ipsa tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non similique maiores dolorum quidem fuga assumenda, ipsam molestiae ex accusamus temporibus facilis sit accusantium doloribus corrupti. Exercitationem inventore quasi dolorem cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis placeat sit dolore ipsa nulla ut cupiditate eligendi corrupti inventore? Rem corporis qui asperiores molestias necessitatibus architecto debitis dolore reiciendis hic?</p>
+                            <p class="section-about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Fugiat officiis sit tempore? Perferendis consectetur delectus esse non exercitationem voluptas suscipit eum sunt. 
+                                Dolore, molestias. Hic libero id quis ipsa tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Non similique maiores dolorum quidem fuga assumenda, ipsam molestiae ex accusamus temporibus facilis sit accusantium doloribus corrupti. 
+                                Exercitationem inventore quasi dolorem cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Perferendis placeat sit dolore ipsa nulla ut cupiditate eligendi corrupti inventore? 
+                                Rem corporis qui asperiores molestias necessitatibus architecto debitis dolore reiciendis hic?</p>
+
+                            <p class="section-about__paragraph">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam adipisci hic debitis. 
+                                Tempora iusto, qui eius in tenetur dolore voluptas quis veniam magni odio similique dicta necessitatibus. Repellat, architecto adipisci!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem iusto error fuga repellat ipsa nostrum sint illo. 
+                                Eius laborum cum mollitia iure esse cupiditate nihil aperiam voluptate, ab, inventore iusto!
+                            </p>                           
+
                         </div>
                     </div>
-                    <div class="flex-container__col-2-of-2">
-                        <div class="section-about__photo">   
-                            <div class="flex-container__row">
-                                <div class="flex-container__col-1-of-4"><img src="img/uptown-about-1.png" alt="Photo by Court Prather on Unsplash" class="section-about__photo-1"></div>
-                                <div class="flex-container__col-1-of-4"><img src="img/uptown-about-2.png" alt="Photo by Thomas Kelley on Unsplash" class="section-about__photo-2"></div>
-                            </div>                        
-                            <div class="flex-container__row">
-                                <div class="flex-container__col-1-of-4"><img src="img/uptown-about-3.png" alt="Photo by Zach Miles on Unsplash" class="section-about__photo-3"></div>
-                                <div class="flex-container__col-1-of-4"><img src="img/uptown-about-4.png" alt="Photo by Leon Ephraïm on Unsplash" class="section-about__photo-4"></div>
-                            </div>                        
+                    <div class="flex-container-2__col-2-of-2 tmp-color-2">                                                 
+                        <div class="flex-container-2__col-1-of-4">
+                            <img src="img/uptown-about-2.png" alt="Photo by Thomas Kelley on Unsplash" class="section-about__photo">
+                        </div>                    
+                        <div class="flex-container-2__col-1-of-4">
+                            <img src="img/uptown-about-3.png" alt="Photo by Zach Miles on Unsplash" class="section-about__photo">
                         </div>
-                    </div>        
-                </div> -->
+                        <div class="flex-container-2__col-1-of-4">
+                            <img src="img/uptown-about-4.png" alt="Photo by Leon Ephraïm on Unsplash" class="section-about__photo">
+                        </div>                                                            
+                    </div> 
+                </div>
             </section>
             <section class="section-menu" id="section-menu">
-                <!-- <div class="section-menu__header">        
-                    <h2 class="header-secondary header-secondary__dark header-gradient">
+                <div class="section-menu__headline">        
+                    <h2 class="section-menu__header header-secondary__dark header-gradient">
                             Menu
                     </h2>
-                    <p class="paragraph paragraph--dark">We have a bit of everything. <br /> Our donuts are freshly baked every morning. <br />Come and get them while they are soft and gooey.</p>
+                    <p class="section-menu__paragraph paragraph--dark">We have a bit of everything. <br /> Donuts baked fresh every morning. <br />Come and get them while they are soft and gooey.</p>
                 </div>     
-                <div class="section-menu__content flex-container flex-container--bglight u-border-radius-small">
-                    <div class="flex-container__row u-padding-large">
-                        <div class="flex-container__col-1-of-3 u-padding-medium u-border-t-l-b-solid-small u-border-radius-tl-bl-small">
+                <div class="section-menu__content flex-container-3 flex-container--bglight u-border-radius-small">                    
+                        <div class="flex-container-3__col-1-of-3">
                             <h3 class="header-tertiary">
                                 Glazed & Frosted
                             </h3>
@@ -138,7 +149,7 @@
                                 <li class="section-menu__list-item"><img src="img/pistachio.png" alt="pistachio donut"></a></li>
                             </ul>
                         </div>
-                        <div class="flex-container__col-1-of-3 u-padding-medium u-border-t-b-solid-small">
+                        <div class="flex-container-3__col-1-of-3">
                             <h3 class="header-tertiary">
                                 Cakes & Buttermilks
                             </h3>
@@ -163,7 +174,7 @@
                                 <li class="section-menu__list-item"><img src="img/pumpkin-spice.png" alt="pumpkin spice donut"></li>
                             </ul>    
                         </div>
-                        <div class="flex-container__col-1-of-3 u-padding-medium u-border-t-r-b-solid-small u-border-radius-tr-br-small">
+                        <div class="flex-container-3__col-1-of-3">
                             <h3 class="header-tertiary">
                                 Large & Specialty
                             </h3>
@@ -181,42 +192,37 @@
                                 <li class="section-menu__list-item">&nbsp;</li>
                                 <li class="section-menu__list-item"><img src="img/cinnamon-rolls.png" alt="cinnamon rolls"></li>
                             </ul>
-                        </div>
-                    </div>        
+                        </div>                    
                 </div>
-            </section> -->
+            </section>
 
     </main>    
-    
-    <!-- Make this load after main-->
     <footer class="footer" id="footer">
-        <!-- <div class="footer_content flex-container-2 flex-container-2--bgcolor4">
-            <div class="flex-container-2__row u-padding-verylarge">
-                <div class="flex-container-2__col-2-of-2">
-                    <h3 class="header-tertiary header-tertiary--color1">
-                        You deserve a donut
-                    </h3>
-                    <p class="paragraph paragraph--light">Follow Us</p>
-                    <ul class="icons">
-                        <li class="icons__item"><ion-icon class="icons__item--color-fb" name="logo-facebook" size="large"></ion-icon></a></li>                        
-                        <li class="icons__item"><ion-icon class="icons__item--color-in" name="logo-instagram" size="large"></ion-icon></li>                        
-                    </ul>
-                </div>
-                <div class="flex-container-2__col-2-of-2">
-                    <div class="location">                    
-                        <address class="location__address">
-                            Directly across from Truman College<br />
-                            1122 W Wilson Ave<br />
-                            Chicago, IL 60640<br />
-                        </address>
-                        <div class="location__hours">
-                            Mon - Sat : 6 am - 6 pm<br />
-                            Sun : 6 am - 3 pm
-                        </div>
-                    </div>  
-                </div>
+        <div class="footer__content flex-container-4 flex-container-2--bgcolor4">            
+            <div class="flex-container-4__col-1-of-2">
+                <h3 class="footer__header header-tertiary--color1">
+                    You deserve a <span class="footer__header-span">donut</span>
+                </h3>
+                <p class="footer__paragraph paragraph--light">Follow Us</p>
+                <ul class="icons">
+                    <li class="icons__item"><ion-icon class="icons__item--color-fb" name="logo-facebook" size="large"></ion-icon></a></li>                        
+                    <li class="icons__item"><ion-icon class="icons__item--color-in" name="logo-instagram" size="large"></ion-icon></li>                        
+                </ul>
             </div>
-        </div> -->
+            <div class="flex-container-4__col-1-of-2">
+                <div class="footer__location">                    
+                    <address class="footer__location-address">
+                        Directly across from Truman College<br />
+                        1122 W Wilson Ave<br />
+                        Chicago, IL 60640<br />
+                    </address>
+                    <div class="footer__location-hours">
+                        Mon - Sat : 6 am - 6 pm<br />
+                        Sun : 6 am - 3 pm
+                    </div>
+                </div>  
+            </div>
+        </div>        
     </footer>
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <script src="js/bundle.js"></script>
