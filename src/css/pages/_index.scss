@@ -195,7 +195,7 @@
     }
 
     @include respond-sect(med) {             
-        padding: 8rem;
+        padding: 5rem 8rem 8rem 8rem;
     }
 
     @include respond-sect(small) {             
@@ -204,6 +204,10 @@
 
     @include respond-sect(smallest) {             
         padding: 2rem;
+    }
+
+    &__headline {
+
     }
 
     &__header {        
@@ -283,19 +287,97 @@
 }
 
 .footer {
+    background-color: $color-tertiary;
+    padding: 5rem 15rem;
+
+    @include respond-sect(largest) {             
+        padding: 5rem 10rem;
+    }
+
+    @include respond-sect(large1) {             
+        padding: 3rem;
+    }
+
+    @include respond-sect(med) {             
+        padding: 5rem 8rem;
+    }
+
+    @include respond-sect(small) {             
+        padding: 5rem;
+    }
+
+    @include respond-sect(smallest) {             
+        padding: 2rem;
+    }
+
+    &__location {
+        font-size: 1.8rem;
+        line-height: 1.5em;
+        color: #fefefe;
+        font-family: 'Crimson Text', serif;
+        letter-spacing: .2rem;
+
+        @include respond-sect(med) {             
+            font-size: 1.4rem;
+            text-align: center;
+        }
 
 
+        &-address {
+            margin-top: .8rem;
+            margin-bottom: 2rem;
+
+            @include respond-sect(med) {             
+                margin-top: .4rem;               
+            }
+        }
+
+        &-hours {
+
+        }
+    }
+
+    &__header {
+        font-family: 'Dancing Script', cursive, sans-serif;
+        font-size: 3rem;        
+        margin-bottom: 2rem;
+
+        @include respond-sect(med) {             
+            font-size: 3rem;
+        }
+
+        &-span {
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-family: 'Crimson Text', serif;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+        font-family: 'Crimson Text', serif;
+        letter-spacing: .2rem;
+        @include respond-sect(med) {             
+            text-align: center;
+        }
+    }    
 }
 
 .icons {
 
     list-style: none;
     
+    @include respond-sect(med) {             
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
     &__item {
         display: inline-block;    
                 
         &--color-fb {
-            color: #3b5999;
+            color: #5b7abd;
         }
     
         &--color-in {
@@ -317,11 +399,3 @@
    
 }
 
-.location {
-    font-size: 2rem;
-    color: #fefefe;
-
-    &__address {
-        margin-bottom: 2rem;
-    }
-}

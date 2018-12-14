@@ -112,7 +112,7 @@
 .flex-container-3 {
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid #000;
+    border: 2px solid $color-secondary;
     padding: 10rem 0;    
     margin: auto;
 
@@ -141,63 +141,17 @@
     }
 }
 
-// .flex-container {    
-//     margin: 10rem 10rem 0 10rem;    
-//     display: flex;     
-//     justify-content: space-around;      
+.flex-container-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: flex-start;
 
-//     &__row {
-//         display: flex;
-//         justify-content: flex-end;
-//     }
-
-//     &__col-1-of-2 {
-//         flex: 3; 
-//     }
-
-//     &__col-1-of-3 {
-//         //flex: 1;  
-//         flex-basis: 32%;        
-       
-//     }
-    
-//     &__col-1-of-4 {
-//         //flex: 1;
-//         width: 40rem;
-//         height: 40rem;
-//         overflow: hidden;
-//         flex-basis: 50%;
-//     }
-
-//     &__col-2-of-2 {
-//         //flex: 1; 
-//     }   
-
-//     &--bgcolor1 { background-color: $backcolor-1; }
-//     &--bgcolor2 { background-color: $backcolor-2; }    
-//     &--bgcolor3 { background-color: $backcolor-3; }
-//     &--bglight { background: #fefefe; }
- 
-// }
-
-
-
-// .flex-container-2 {    
-
-//     &__row {
-//         display: flex;            
-//     }
-
-//     &__col-2-of-2 {
-//         flex: 2;
-//     }
-
-//     &--bgcolor3 {
-//         background-color: $backcolor-3; 
-//     }
-
-//     &--bgcolor4 {
-//         background-color: $backcolor-4;
-//     }
-// }
-
+    @include respond-sect(med) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+}
