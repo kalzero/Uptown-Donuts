@@ -5,19 +5,31 @@
     background-color: white;   
     z-index: 10;    
 
+    @media (max-width: 600px) {
+        width: 0;
+        height: 0;
+    }
+
     &__logo {
         position: absolute;
-        display: inline-block;
-        height: 100px;
+        display: inline-block;        
         width: 100px;        
         margin-left: 4rem; 
-        cursor: pointer;           
+        cursor: pointer;   
+        
+        @media (max-width: 600px) {
+            display: none;
+        }    
     }
 
     &__container {    
         height: 100px;
         display: flex;                
-        justify-content: flex-end;                     
+        justify-content: flex-end;      
+        
+        // @media (min-width: 600px) {
+        //    display: none;
+        // }    
     }   
 
     &__list {
@@ -42,11 +54,91 @@
     &__link:link,
     &__link:active {
         display: block;
-        padding: 3rem 3rem;
-        
+        padding: 3rem 3rem;        
     }
 
     &__link:hover {
         background-color: $color-secondary;
     }
+
+   
 }
+.nav-donut-toggle {
+    display: none;
+    @media (max-width: 600px) {
+        position: fixed;
+        display: flex; 
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        z-index: 11;
+    }
+
+    &-image {
+
+        cursor: pointer;
+    }
+}
+
+.side-nav {        
+    display: none;
+
+    @media (max-width: 600px) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 80%;
+        background-color: white;
+        z-index: 0;
+        display: flex;    
+        align-items: flex-start;
+        justify-content: center;
+        transition: transform .3s ease-out;    
+   
+
+        &__logobox {        
+            &-image {            
+                display: inline-block;        
+                width: 100px;        
+                margin-left: 1rem; 
+                cursor: pointer; 
+            }
+        }
+
+        &__list {
+            list-style: none;
+
+            &-item {
+                margin-bottom: 1rem;
+                
+                &-link {
+                    text-decoration: none;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    
+                }
+            }
+
+        }
+    }
+}
+
+.open {
+    @media (max-width: 600px) {
+        transform: translateX(0);
+        z-index: 11;
+    }
+}
+
+.close {
+    @media (max-width: 600px) {
+        transform: translateX(-100%);     
+        z-index: 11;   
+    }
+}
+
+
+

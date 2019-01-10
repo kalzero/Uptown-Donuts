@@ -1,15 +1,15 @@
 .header {
-    height: 90vh;           
+    height: 100vh;           
     width: 100%;
     position: relative;    
 
-    @include respond-anim(big-laptop) { height: 90vh; }
-    @include respond-anim(laptop) { height: 88.5vh; }  
-    @include respond-anim(ipad-pro) { height: 92.5vh; }  
-    @include respond-anim(ipad) { height: 90vh; }
-    @include respond-anim(phone) { height: 93vh; }
-    @include respond-anim(iphonex) { height: 87vh; }
-    @include respond-anim(galaxy) { height: 84vh; }
+    // @include respond-anim(big-laptop) { height: 90vh; }
+    // @include respond-anim(laptop) { height: 88.5vh; }  
+    // @include respond-anim(ipad-pro) { height: 92.5vh; }  
+    // @include respond-anim(ipad) { height: 90vh; }
+    // @include respond-anim(phone) { height: 93vh; }
+    // @include respond-anim(iphonex) { height: 87vh; }
+    // @include respond-anim(galaxy) { height: 100vh; }
  
     &__img-sky {
         background: linear-gradient(-180deg, #000d1a, #00284d, #004280, #005cb3, #0077e6, #1a90ff, #4da9ff, #80c1ff);
